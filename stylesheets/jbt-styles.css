@@ -196,13 +196,13 @@ a.dropdown-toggle b.caret {
 
 @media screen and (min-width: 680px) {
   /* line 205, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
-  #items {
+  #downloads {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
   }
   /* line 209, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
-  #items .download-unit {
+  #downloads .download-unit {
     position: relative;
     margin-bottom: 1em;
     padding: 1em;
@@ -210,23 +210,23 @@ a.dropdown-toggle b.caret {
     height: auto;
   }
   /* line 216, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
-  #items .download-unit h3 {
+  #downloads .download-unit h3 {
     text-align: center;
   }
   /* line 219, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
-  #items .download-unit ul {
+  #downloads .download-unit ul {
     text-align: center;
     list-style-type: square;
     margin-bottom: 2em;
   }
   /* line 223, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
-  #items .download-unit ul li {
+  #downloads .download-unit ul li {
     margin-left: 1em;
     line-height: 2em;
     text-align: left;
   }
   /* line 229, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
-  #items .download-unit .download-btn {
+  #downloads .download-unit .download-btn {
     margin-left: -1em;
     position: absolute;
     bottom: 0em;
@@ -234,7 +234,7 @@ a.dropdown-toggle b.caret {
     text-align: center;
   }
   /* line 238, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
-  #items .download-unit:first-child::after {
+  #downloads .download-unit:first-child::after {
     content: "";
     position: absolute;
     right: 0px;
