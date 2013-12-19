@@ -154,37 +154,42 @@ div.alert {
   background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 
-/* line 169, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 164, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+.button {
+  cursor: pointer;
+}
+
+/* line 173, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .breadcrumb {
   margin-bottom: 2em;
 }
-/* line 171, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 175, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .breadcrumb > .active {
   color: #999999;
 }
 
-/* line 175, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 179, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 a.dropdown-toggle {
   text-decoration: none;
 }
-/* line 177, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 181, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 a.dropdown-toggle b.caret {
   color: #336699;
 }
 
-/* line 187, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 191, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .nav-bar
 .navbar-inner {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 190, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 194, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .nav-bar
 .navbar-inner .btn {
   border-width: 0px;
 }
 
-/* line 198, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 202, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .hero-unit {
   background: white;
   padding-top: 30px;
@@ -192,35 +197,35 @@ a.dropdown-toggle b.caret {
   margin-top: 30px;
 }
 
-/* line 205, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 209, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .hero-unit > img {
   padding-left: 20px;
   float: right;
 }
 
-/* line 210, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 214, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .hero-content h1, .hero-content h2, .hero-content p {
   text-align: right;
 }
 
-/* line 213, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 217, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .hero-content h1 {
   margin-top: 20px;
 }
 
-/* line 216, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 220, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .hero-content h2 img {
   vertical-align: text-bottom;
 }
 
 @media screen and (min-width: 680px) {
-  /* line 224, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 228, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #downloads {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
   }
-  /* line 228, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 232, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #downloads .download-unit {
     position: relative;
     margin-bottom: 1em;
@@ -228,23 +233,23 @@ a.dropdown-toggle b.caret {
     #min-height: 25em;
     height: auto;
   }
-  /* line 235, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 239, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #downloads .download-unit h3 {
     text-align: center;
   }
-  /* line 238, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 242, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #downloads .download-unit ul {
     text-align: center;
     list-style-type: square;
     margin-bottom: 2em;
   }
-  /* line 242, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 246, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #downloads .download-unit ul li {
     margin-left: 1em;
     line-height: 2em;
     text-align: left;
   }
-  /* line 248, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 252, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #downloads .download-unit .download-btn {
     margin-left: -1em;
     position: absolute;
@@ -252,7 +257,7 @@ a.dropdown-toggle b.caret {
     width: 100%;
     text-align: center;
   }
-  /* line 257, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 261, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #downloads .download-unit:first-child::after {
     content: "";
     position: absolute;
@@ -266,38 +271,38 @@ a.dropdown-toggle b.caret {
     background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
   }
 }
-/* line 263, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 267, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .links {
   position: relative;
   float: right;
 }
-/* line 264, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 268, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .links a {
   margin-right: 0.0em;
 }
-/* line 267, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 271, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .links span {
   padding-top: 4px;
   line-height: 20px;
 }
 
-/* line 276, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 280, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #release_info {
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-/* line 281, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 285, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #displayed-version > .label {
   vertical-align: top;
 }
 
-/* line 285, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 289, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #installation_tabs {
   margin-top: 2em;
 }
 
-/* line 291, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 295, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #installation-tabs-content {
   margin-left: auto;
   margin-right: auto;
@@ -312,23 +317,23 @@ a.dropdown-toggle b.caret {
   padding-right: 20px;
   padding-bottom: 20px;
 }
-/* line 306, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 310, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #installation-tabs-content table {
   margin-top: 2em;
 }
-/* line 308, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 312, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #installation-tabs-content table tr {
   text-align: left;
 }
-/* line 310, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 314, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #installation-tabs-content table tr:nth-child(2n) {
   background: #fbfbfb;
 }
-/* line 313, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 317, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #installation-tabs-content table tr:nth-child(2n+1) {
   background: #f7f7f7;
 }
-/* line 316, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 320, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 #installation-tabs-content table tr th, #installation-tabs-content table tr td {
   border: 1px solid #dddddd;
   padding-top: 5px;
@@ -337,15 +342,15 @@ a.dropdown-toggle b.caret {
   padding-right: 10px;
 }
 
-/* line 331, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 335, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .download-instructions h3 {
   margin-top: 0;
 }
-/* line 334, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 338, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .download-instructions h4 {
   margin-top: 2em;
 }
-/* line 336, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 340, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .download-instructions h4 + div {
   display: block;
   padding: 1em;
@@ -354,43 +359,43 @@ a.dropdown-toggle b.caret {
   border-radius: 4px 4px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.055);
 }
-/* line 345, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 349, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .download-instructions .nav-tabs > .active > a {
   color: #656565;
 }
 
-/* line 350, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 354, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 span.label {
   font-weight: normal;
   text-shadow: none;
 }
-/* line 353, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 357, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 span.label#displayed-version {
   vertical-align: top;
 }
-/* line 357, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 361, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 span.label.label_stable, span.label.label_latest_release {
   background-color: #468847;
 }
-/* line 360, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 364, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 span.label.label_development {
   background-color: #3a87ad;
 }
-/* line 363, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 367, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 span.label.label.label_nightly {
   background-color: #f89406;
 }
-/* line 366, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 370, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 span.label.float-right {
   font-size: smaller;
 }
 
-/* line 371, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 375, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .sidenav li:first-child a {
   border-radius: 6px 6px 0 0;
 }
 
-/* line 379, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 383, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .sidenav .active a {
   border: 0 none;
   box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, -1px 0 0 rgba(0, 0, 0, 0.1) inset;
@@ -400,77 +405,77 @@ span.label.float-right {
   z-index: 2;
 }
 
-/* line 392, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 396, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .features {
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 398, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 402, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .features a {
   width: 100%;
   text-align: center;
 }
-/* line 403, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 407, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .features img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 411, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 415, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .feature img {
   display: block;
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 416, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 420, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .feature:nth-child(even) img {
   float: left;
 }
-/* line 419, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 423, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .feature:nth-child(odd) img {
   float: right;
 }
-/* line 422, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 426, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .feature .featureContent, .feature .hero-unit {
   padding: 30px;
 }
 
-/* line 427, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 431, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .featureContent p {
   text-align: justify;
 }
 
-/* line 431, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 435, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .features-separator hr {
   clear: both;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-/* line 437, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 441, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .feature-menu {
   padding-top: 20px;
 }
-/* line 439, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 443, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .feature-menu li {
   display: inline;
   padding-right: 30px;
 }
-/* line 443, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 447, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .feature-menu li h4 {
   display: inline;
 }
 
 @media screen and (min-width: 940px) {
-  /* line 451, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 455, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1 {
     position: relative;
     margin-bottom: 2em;
   }
-  /* line 454, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 458, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1::before {
     content: "";
     position: absolute;
@@ -485,109 +490,109 @@ span.label.float-right {
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
     background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
   }
-  /* line 457, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 461, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1:last-child::before {
     content: "";
     background-image: none;
   }
-  /* line 461, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 465, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1::after {
     display: block;
     clear: both;
     margin-bottom: 2em;
     content: "";
   }
-  /* line 467, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 471, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1 p {
     font-size: 1.1em;
     font-weight: 200;
     line-height: 30px;
   }
-  /* line 474, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 478, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect2 {
     padding-top: 20px;
   }
-  /* line 479, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 483, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1:nth-child(odd) H2, #feature .sect1:nth-child(odd) .sect2 > :not(.imageblock) {
     float: left;
     clear: left;
     width: 50%;
   }
-  /* line 485, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 489, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1:nth-child(odd) .sect2 > .imageblock {
     float: right;
     margin-top: -4em;
     width: 50%;
   }
-  /* line 493, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 497, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1:nth-child(even) H2, #feature .sect1:nth-child(even) .sect2 > :not(.imageblock) {
     float: right;
     clear: right;
     width: 50%;
   }
-  /* line 499, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+  /* line 503, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
   #feature .sect1:nth-child(even) .sect2 > .imageblock {
     float: left;
     margin-top: -4em;
     width: 50%;
   }
 }
-/* line 508, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 512, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .tableblock {
   margin-bottom: 1em;
 }
-/* line 510, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 514, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .tableblock th, .tableblock td {
   border: 1px solid #656565;
   padding: 4px;
 }
 
-/* line 526, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 530, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post {
   padding-left: 0px;
   padding-right: 0px;
   text-align: left;
 }
-/* line 531, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 535, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post:last-child hr {
   display: none;
 }
-/* line 536, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 540, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .title-wrapper img {
   float: left;
   margin-right: 10px;
 }
-/* line 540, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 544, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .title-wrapper .title {
   padding-bottom: 5px;
 }
-/* line 542, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 546, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .title-wrapper .title.border {
   border-bottom: 1px solid #CCC;
 }
-/* line 545, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 549, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .title-wrapper .title h3 {
   text-decoration: none;
   margin-bottom: 0px;
 }
-/* line 550, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 554, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .title-wrapper .title h4 {
   text-decoration: none;
   margin-bottom: 0px;
 }
-/* line 555, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 559, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .title-wrapper .title .author {
   color: #777;
 }
-/* line 558, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 562, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .title-wrapper .title .tags {
   color: #777;
 }
-/* line 561, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 565, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .title-wrapper .title .icon-tags {
   display: inline;
 }
-/* line 566, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 570, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post pre {
   max-height: none;
   margin-top: 10px;
@@ -597,58 +602,58 @@ span.label.float-right {
   margin-right: 0px;
   background-image: none;
 }
-/* line 576, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 580, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .body {
   margin-bottom: 20px;
   margin-top: 20px;
   clear: both;
 }
-/* line 581, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 585, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .body h1 {
   font-size: 20px;
   text-decoration: none;
   text-align: left;
   color: #4A5D75;
 }
-/* line 584, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 588, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .body h2 {
   font-size: 18px;
   text-decoration: none;
   text-align: left;
   color: #4A5D75;
 }
-/* line 587, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 591, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .body h3 {
   font-size: 16px;
   text-decoration: none;
   text-align: left;
   color: #4A5D75;
 }
-/* line 593, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 597, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .navigation hr {
   display: block;
 }
-/* line 596, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 600, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .navigation .previous {
   text-align: left;
 }
-/* line 599, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 603, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .navigation .next {
   text-align: right;
 }
-/* line 606, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 610, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .post .admonitionblock table td {
   border: 1px solid #656565;
   padding: 1em;
 }
 
-/* line 620, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 624, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .whatsnew .sect1 {
   position: relative;
   padding-bottom: 2em;
   margin-bottom: 2em;
 }
-/* line 624, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 628, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .whatsnew .sect1::after {
   content: "";
   position: absolute;
@@ -663,7 +668,7 @@ span.label.float-right {
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
   background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
-/* line 627, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
+/* line 631, /home/travis/build/jbosstools/jbosstools-website/stylesheets/jbt-styles.scss */
 .whatsnew .sect1 img {
   margin-top: 1em;
   margin-bottom: 1em;
