@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JBoss Tools</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="Thu, 19 Dec 2013 10:29:02 UTC" http-equiv="Last-Modified">
+    <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
+    <!-- IE 6-8 support of HTML 5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://static.jboss.org/theme/js/libs/html5/pre3.6/html5.min.js"></script>
+    <![endif]-->
+    <!-- Defines the project favicon. Change these URLs to your specific project folder on static.jboss.org. -->
+    <link href="http://static.jboss.org/images/tools/favicon.ico" rel="shortcut icon">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="http://jbosstools.github.com/jbosstools-website/stylesheets/jbt-styles.css" rel="stylesheet" type="text/css">
+    <link href="http://jbosstools.github.com/jbosstools-website/fonts/font-awesome/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <!-- Defines the project banner. Change these URLs to your specific project folder on static.jboss.org -->
+    <!--
+      <style>
+        @media (min-width: 980px) {
+          .banner { background-image: url(http://static.jboss.org/images/tools/tools-banner-1180px.png); height: 110px;  }
+        }
+        @media (max-width: 979px) {
+          .banner { background-image: url(http://static.jboss.org/images/tools/tools-logo.png); background-repeat:no-repeat; height: 60px; }
+        }
+        @media (max-width: 650px) {
+          .banner { width: 200px; margin: 0px auto; }
+        }
+      </style>
+    -->
+    <style>
+      .banner { background-image: url(http://static.jboss.org/images/tools/tools-banner-1180px.png); height: 110px;  }
+    </style>
+    <script src="http://static.jboss.org/theme/js/libs/jquery/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <!-- begin accessibility skip to top -->
+    <ul class="visuallyhidden" id="top">
+      <li>
+        <a accesskey="n" href="#nav" title="Skip to navigation">Skip to navigation</a>
+      </li>
+      <li>
+        <a accesskey="c" href="#page" title="Skip to content">Skip to content</a>
+      </li>
+    </ul>
+    <div class="container" id="content">
+      <div class="dropup">
+        <a class="tabnav-closed" href="https://www.jboss.org" id="tab">Red Hat</a>
+        <script>
+          window.addEventListener('load', function() { renderTabzilla("JBoss Tools","tools") }, false);
+        </script>
+      </div>
+      <div class="banner">
+        <a href="#"></a>
+      </div>
+      <div class="navbar navbar-inverse" id="navbar-fix">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li id="home"><a href="http://jbosstools.github.com/jbosstools-website/">Home</a></li>
+                <li id="downloads"><a href="http://jbosstools.github.com/jbosstools-website/downloads/">Downloads</a></li>
+                <li class="dropdown" id="docs"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Docs <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://jbosstools.github.com/jbosstools-website/features">Features</a></li>
+                  <li><a href="http://jbosstools.github.com/jbosstools-website/whatsnew">What's New</a></li>
+                  <li><a href="http://jbosstools.github.com/jbosstools-website/guides/videos.html">Video Tutorials</a></li>
+                  <li><a href="http://docs.jboss.org/tools/4.1.0.Final/">Reference Guides</a></li>
+                </ul></li>
+                <li class="dropdown" id="community">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Community <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://jbosstools.github.com/jbosstools-website/contribute.html">Contribute</a></li>
+                    <li><a href="http://www.jboss.org/community/docs/DOC-10794">Wiki</a></li>
+                    <li><a href="http://community.jboss.org/community/tools?view=discussions">User Forum</a></li>
+                    <li><a href="https://lists.jboss.org/mailman/listinfo/jbosstools-dev">Mailing Lists</a></li>
+                    <li><a href="irc://irc.freenode.org/jbosstools">Chat</a></li>
+                    <li id="blog"><a href="../blog">Blog</a></li>
+                  </ul>
+                </li>
+                <li id="issuetracker"><a href="https://issues.jboss.org/browse/JBIDE">Issues</a></li>
+                <li id="sourcecode"><a href="https://github.com/jbosstools">Source Code</a></li>
+                <li id="build"><a href="http://hudson.jboss.org/hudson/view/JBossTools/view/JBossTools_Trunk/">Build</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Follow Us <b class="caret"></b></a>
+                  <ul class="dropdown-menu projectsocialmedia">
+                    <li><a href="http://twitter.com/jbosstools"><img src="http://static.jboss.org/theme/images/common/socialmedia_icon40_twitter.png"></a></li>
+                    <li><a href="https://plus.google.com/109915195368578219327"><img src="http://static.jboss.org/theme/images/common/socialmedia_icon40_googleplus.png"></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- activate the tab by adding the 'active' class -->
+      <script>
+        document.getElementById("docs").className += " active";
+      </script>
+      <div id="content-wrapper">
+        <div class='breadcrumb'><a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/index.html'
+                >Home</a> / <a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/whatsnew/index.html'
+                >What's New</a> / <a class='breadcrumb_anchor active' href='http://jbosstools.github.com/jbosstools-website/whatsnew/webservices/1.5.1.html'
+                >Web Services What's New in version 1.5.1</a></div>
+        <div class="row-fluid">
+          <div class="span2 sidebar">
+            <ul class="nav nav-list">
+              <li class="nav-header">Web Services</li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/webservices.html">Overview</a>
+              </li>
+              <li>
+                <a>Issue Tracker</a>
+              </li>
+              <li>
+                <a>What's New</a>
+                <ul class="nav nav-list">
+                  <li class="active">
+                    <a href="/whatsnew/webservices/1.5.1.html">1.5.1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="nav-header">
+                Other features
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/aerogear.html">Aerogear</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/arquillian.html">Arquillian</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/browsersim.html">BrowserSim</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/cdi.html">CDI</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/central.html">JBoss Central</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/forge.html">Forge Tool</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/hibernate.html">Hibernate Tools</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/livereload.html">LiveReload</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/maven.html">Maven</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/openshift.html">OpenShift</a>
+              </li>
+              <li>
+                <a href="http://jbosstools.github.com/jbosstools-website/features/server.html">Server Tooling</a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <div class="whatsnew">
+              <div class="sect1">
+              <h2 id="_webservices_tools_1_5_1_alpha2_what_s_new">WebServices Tools 1.5.1.Alpha2 What&#8217;s New</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_bug_fixes">Bug fixes</h3>
+              <div class="paragraph">
+              <p>A few bugs were fixed in the JAX-RS Tooling for this version of the Web Services component. In particular:</p>
+              </div>
+              <div class="ulist">
+              <ul>
+              <li>
+              <p>If a Web application contained 2 JAX-RS Application definition (in Java classes and/or as a declaration in the deployment descriptor), a warning on both elements would be set. But if the user removed one of those elements to fix the problem, the warning on the other element would remain. This is now fixed, the warning on the remaining is also removed. Related Jira</p>
+              </li>
+              <li>
+              <p>When refactoring an annotation (such as a custom CDI qualifier), the JAX-RS Tooling would complain if the @Target was incorrect, even though the annotation was not related to JAX-RS. This is now fixed, the JAX-RS tooling checks that an @HttpMethod meta-annotation is set on the user&#8217;s annotation to validate it. Related Jira</p>
+              </li>
+              <li>
+              <p>If a Web application contained 2 JAX-RS Application definition (in Java classes and/or as a declaration in the deployment descriptor), there would be 2 warnings on each of those elements. This is now fixed, and only 1 warning will appear on each element. Related Jira</p>
+              </li>
+              </ul>
+              </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="row-fluid">
+        <div class="span2 offset1">
+          <h4>Navigate</h4>
+          <ul>
+            <li>
+              <a href="http://jbosstools.github.com/jbosstools-website" title="Overview">Overview</a>
+            </li>
+            <li>
+              <a href="http://jbosstools.github.com/jbosstools-website/download" title="Download">Download</a>
+            </li>
+            <li>
+              <a href="http://jbosstools.github.com/jbosstools-website/usage" title="Usage">Usage</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span2">
+          <h4>Follow Us</h4>
+          <ul>
+            <li>
+              <a href="http://jbosstools.github.com/jbosstools-website/blog" title="Blog">Blog</a>
+            </li>
+            <li>
+              <a href="http://twitter.com/jbosstools" title="Twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/109915195368578219327" title="Google+">Google+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span2">
+          <h4>Contribute</h4>
+          <ul>
+            <li>
+              <a href="https://issues.jboss.org/browse/JBIDE" title="Submit a bug">Submit a bug</a>
+            </li>
+            <li>
+              <a href="https://github.com/jbosstools" title="Write code">Write Code</a>
+            </li>
+            <li>
+              <a href="#" title="Ask questions on the forum">Ask questions on the forum</a>
+            </li>
+            <li>
+              <a href="#" title="Talk on IRC">Talk with us on IRC</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span3 offset1">
+          <h4>Licenses</h4>
+          <p>All plugins are available under the Eclipse Public License (EPL).</p>
+          <p>They may also contain some libraries licensed under certain open source licenses such as EPL, LGPL, and/or certain other open source licenses.</p>
+          <p></p>
+          <div class="jbossbadge">
+            <a href="http://www.jboss.org/">
+              <img src="http://static.jboss.org/theme/images/common/jbossbadge.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container" id="companyfooter">
+      <div class="redhatlogo">
+        <div id="logospacer"></div>
+        <a href="http://www.redhat.com/"><img src="http://static.jboss.org/theme/images/common/redhat_logo.png"></a>
+      </div>
+    </div>
+    <span class="backToTop">
+      <a href="#top">back to top</a>
+    </span>
+    <script src="http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.3/bootstrap-community.min.js"></script>
+  </body>
+</html>
