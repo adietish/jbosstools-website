@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <meta content="Mon, 23 Dec 2013 15:36:27 UTC" http-equiv="Last-Modified">
+    <meta content="Mon, 23 Dec 2013 18:34:01 UTC" http-equiv="Last-Modified">
     <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
     <!-- IE 6-8 support of HTML 5 elements -->
     <!--[if lt IE 9]>
@@ -176,13 +176,462 @@
           <div class="span10">
             <div class="whatsnew">
               <div class="sect1">
-              <h2 id="_2_5_0_cr1">2.5.0.CR1</h2>
+              <h2 id="_openshift_explorer">OpenShift Explorer</h2>
               <div class="sectionbody">
               <div class="sect2">
-              <h3 id="_application_wizard">Application Wizard</h3>
+              <h3 id="_restart_application">Restart Application</h3>
               <div class="paragraph">
-              <p>Creation log for all applications 	When creating applications you want to know about the credentials that OpenShift initially set for you. This is especially helpful and required when you create a jenkins where you get it&#8217;s url and username/password presented.
-              With CR1 we now present you what OpenShift did for you if there&#8217;s anything to be noticed for any type of application and/or cartridge.</p>
+              <p>If your application has issues you may want to restart it. You can now achieve that within JBoss Tools. Pick "Restart" from the context menu of your application in the OpenShift Explorer:</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/restart-application.png" alt="restart-application"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Restarting your application will fully restart your node, it will not just restart your deployed project. It is equivalent to restarting your server.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_server_adapter">Server adapter</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_console_not_shown">Console not shown</h3>
+              <div class="paragraph">
+              <p>The server adapter for OpenShift allows you to publish your local changes to OpenShift. It pops up the console after publishing so that you can have a detailed look at what happened when pushing. In Alpha1 the console was not shown any more. We fixed this for Alpha2.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/console.png" alt="console"></span>
+              Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_openshift_java_client">OpenShift Java Client</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_new_version_2_1_0">new version 2.1.0</h3>
+              <div class="paragraph">
+              <p>In the last few months we put a lot of effort into the <a href="https://github.com/openshift/openshift-java-client">openshift-java-client</a>. The new version 2.1.0 offers major improvements in terms of compatibility and stability. It&#8217;ll be available from maven central very soon.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jiras</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_general">General</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_livereload_support_for_jboss_as_and_tomcat_servers">LiveReload support for JBoss AS and Tomcat Servers</h3>
+              <div class="paragraph">
+              <p>Coming in JBoss Tools 4.1.0.Beta2, LiveReload now also supports <em>Server Mode</em>, which brings the same level of features to deployed resources than what was introduced in JBoss Tools 4.1.0.Beta1 for the <em>Directory Mode</em> for workspace resources:</p>
+              </div>
+              <div class="ulist">
+              <ul>
+              <li>
+              <p>A separate proxy is automatically started on a distinct port for each local JBoss AS or Tomcat 6.x/7.x server that is started, or if it was already running when the LiveReload server was started. (Support for OpenShift deployments will come later)</p>
+              </li>
+              <li>
+              <p>Users only need to have a single LiveReload server in their workspace, because each running Application Server will have its own delegated proxy.</p>
+              </li>
+              <li>
+              <p>As with <em>Directory Mode</em>, if the <em>livereload.js script injection</em> option is enabled, each returned HTML page will be enriched on-the-fly but the proxy which will inject the &lt;script&gt; tag to load the livereload.js script at the bottom of the &lt;body&gt; element, which removes the need to manually install the LiveReload extension on the browsers.</p>
+              </li>
+              <li>
+              <p>If remote connections are enabled, users can also access their applications deployed on their App Server from external computers or devices such as smartphones or tablets.</p>
+              </li>
+              </ul>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/LiveReload_open_in_web_browser_via_browser-menu.png" alt="LiveReload_open_in_web_browser_via_browser-menu"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related JIRA: JBIDE-14502, JBIDE-13984, JBIDE-14914</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_qr_code_for_easy_access_from_external_devices">QR Code for easy access from external devices</h3>
+              <div class="paragraph">
+              <p>Having the proxy with both <em>livereload.js script injection</em> and <em>allow remote connections</em> options enabled makes a perfect combination to test applications on smartphones and tablets, especially when the LiveReload Browser Extension cannot be installed on such devices.</p>
+              </div>
+              <div class="paragraph">
+              <p>However, typing the entire URL on such devices is not a good experience. This is why JBoss Tools now provides with a dialog showing a QR Code for such use-cases. Users just need to select the network interface on which they will connect and then scan the generated QR Code with their devices to get access to the resource. The dialog also displays an hyperlink to open the location in the external browser.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/LiveReload_open_in_web_browser_via_qrcode-menu.png" alt="LiveReload_open_in_web_browser_via_qrcode-menu"></span></p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/LiveReload_open_in_web_browser_via_qrcode-dialog.png" alt="LiveReload_open_in_web_browser_via_qrcode-dialog"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related JIRA: JBIDE-13984</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_simplified_configuration_and_usage">Simplified Configuration and Usage</h3>
+              <div class="paragraph">
+              <p>Coming in JBoss Tools 4.1.0.Beta2, the proxy option now becomes a permanent feature of the LiveReload server, which means that even workspace resources will be opened with the HTTP protocol instead of the File protocol.</p>
+              </div>
+              <div class="paragraph">
+              <p>The following use-case have been implemented:</p>
+              </div>
+              <div class="ulist">
+              <ul>
+              <li>
+              <p>If the user has no LiveReload server: the plugin prompts a dialog to create and start a new LiveReload Server with ability to enable script injection (default: on) and remote connections (default: off). If the user clicks on "OK", a LiveReload is created and started, then the browser opens the selected resource (file or deployed application). If user clicks <em>Cancel</em>, the dialog closes and nothing happens.</p>
+              </li>
+              <li>
+              <p>If the user already has a LiveReload server but that is not started: a prompt dialog is opened and informs the user that the LiveReload server will be started. the dialog also shows the current options in case the user wants to edit them. If the user clicks on "OK", the LiveReload server is reconfigured and started, then the browser opens the selected resource (file or deployed application). If user clicks <em>Cancel</em>, the dialog closes and nothing happens.</p>
+              </li>
+              <li>
+              <p>In case the user already has a LiveReload server that is already started, there is no need to display a dialog. The browser immediately opens the selected resource (file or deployed application).</p>
+              </li>
+              </ul>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/LiveReload_open_in_web_browser_via_browser-messagedialog.png" alt="LiveReload_open_in_web_browser_via_browser-messagedialog"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Note: In case where the user wants to display the QRCode to test with a mobile device, script injection and remote connections should be enabled.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related JIRA: JBIDE-14897</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_connection_wizard">Connection wizard</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_false_em_invalid_credentials_em_error">False <em>Invalid credentials</em> error</h3>
+              <div class="paragraph">
+              <p>If you have typed in a bad host name or your ~/.openshift/express.conf settings were wrong you would get an "Invalid credentials" error instead of information on the host not being reachable. This is now fixed.</p>
+              </div>
+              <div class="paragraph">
+              <p>Releated to this was that rhc tools version 1.4.7 generated a different format for host in express.conf which caused the tools to parse the host wrongly and you thus got the "Invalid credentials" error. JBoss Tools have been fixed to handle this new format but newer version of rhc tools have also been fixed to use the previous format making both old and new tools compatible again.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_embedding_wizard">Embedding wizard</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_mysql_and_postgresql">MySQL and PostgreSQL</h3>
+              <div class="paragraph">
+              <p>Historically OpenShift did not allow users to users to use a mysql and a Postgres database at the same time. This restriction was lifted some weeks ago and we now upgraded the tooling to allow that, too.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_server_adapter">Server adapter</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_better_change_detection">Better change detection</h3>
+              <div class="paragraph">
+              <p>The OpenShift server adpter keeps track of your local changes and tells you if there are any that you can publish to OpenShift.</p>
+              </div>
+              <div class="paragraph">
+              <p>Previously this tracking was only done against <em>origin</em> remote and only tracking if there were changes to previously committed files that had not been pushed yet.</p>
+              </div>
+              <div class="paragraph">
+              <p>This meant the dialog could be misleading/unprecise to the user.</p>
+              </div>
+              <div class="paragraph">
+              <p>Now OpenShift Tools will check against the proper remote (in case it is not <em>origin</em>) and do a fetch do be able to do a proper check if there really are changes locally compared to what is on the remote OpenShift.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/committed-not-published.png" alt="ahead of remote repository"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_application_wizard">Application Wizard</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_verbose_cartridge_labels">Verbose Cartridge Labels</h3>
+              <div class="paragraph">
+              <p>In Beta1 we gave labels in the OpenShift application wizard some love. We show you better descriptions of what application you&#8217;re about to create and what cartridge you&#8217;re about to embed:</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/cartridge-labels.png" alt="cartridge-labels"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_publish_right_away">Publish Right Away</h3>
+              <div class="paragraph">
+              <p>To create or import an OpenShift application in JBoss Tools you launch the application wizard that does all the heavy lifting for you. This wizard creates the application and imports it to a new project or merges it into an existing one. To then publish these changes to OpenShift, you get over to the server adapter and tell it to publish your Eclipse project.
+              In Alpha2 you had to think about publishing and manually trigger the adapter once you had run through the wizard. Beta1 now prompts you right away and asks you if you want to push once the import/merge is done.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/pushing-if-no-changes.png" alt="push to OpenShift"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_server_adapter">Server adapter</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_see_it_pushing_while_it_s_happening">See it pushing while it&#8217;s happening</h3>
+              <div class="paragraph">
+              <p>JBoss Tools offers you a server adapter to publish your local changes to OpenShift. This adapter does all git pushing for you. In case of maven projects publishing will usually trigger a maven build on OpenShift. This may therefore take quite some time. In Alpha2 you had to wait for this to complete in order to see the results. A limitation in Eclipse EGit prevented us from showing you the output while it was occurring.
+              We improved EGit/JGit and contributed this enhancement to Eclipse. We are therefore now able to give you immediate feedback while we push to OpenShift.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/publishing-to-openshift.png" alt="publishing to OpenShift"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_restart_application">Restart Application</h3>
+              <div class="paragraph">
+              <p>In Alpha2 we allowed you to restart an application from the context menu in the OpenShift Explorer. Beta2 now adds this option to the context menu of the server adapter.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/server-adapter-restart.png" alt="restart application"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_binary_deploy_to_jboss_ews_tomcat_6_7">Binary Deploy to JBoss EWS (Tomcat 6/7)</h3>
+              <div class="paragraph">
+              <p>If you want to deploy some binary artifact (ex. your application war) in JBoss Tools you simply drag and drop your Eclipse project to the OpenShift server adapter. The adapter will then war and push it to OpenShift. While this worked fine with JBoss AS and EAP, things didn&#8217;t work out of the box for tomcat 6 and 7. We now fixed this for Beta1.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_various_improvements">Various Improvements</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_removing_cartridges">Removing Cartridges</h3>
+              <div class="paragraph">
+              <p>Removing cartridges may cause loss of data. This is especially true when you remove databases like mysql, postgres or mongo db. Thus we now remind you of this potential risk and ask you to confirm this irreversible removal.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/remove-cartridge.png" alt="confirm cartridge removal"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_upload_ssh_keys">Upload SSH Keys</h3>
+              <div class="paragraph">
+              <p>Various operations like cloning and inspecting your application logs require you to upload your SSH keys to OpenShift. In order to have an even smoother workflow the application wizard will prompt you if you have no keys on OpenShift yet. It will ask you right away to create a new or upload your existing key(s).</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/add-ssh-keys.png" alt="add ssh keys"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_port_forwarding_for_scalable_apps">Port Forwarding for Scalable Apps</h3>
+              <div class="paragraph">
+              <p>In Alpha2 port forwarding failed for scalable applications. In Beta1 we now made sure that you can forward the ports of any OpenShift application be it scalable or not.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_missing_credentials_when_creating_jenkins">Missing credentials when Creating Jenkins</h3>
+              <div class="paragraph">
+              <p>Before Beta1 it could happen that you created a jenkins application but didn&#8217;t get the credentials for it. The dialog that reported these was empty.
+              In order to fix this we increased the timeouts that made you miss these informations.
+              To make your experience even smoother in case it still fails we now offer you a link to the environments variables in the creation dialog. This link allows you to easily look the credentials via a single click.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/timouted-see-in-envvars.png" alt="link to environment variables"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_openshift_java_client">OpenShift Java Client</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_new_version_2_2_0">New Version 2.2.0</h3>
+              <div class="paragraph">
+              <p>The latest openshift-java-client 2.2.0 moved to exclusively support protocol 1.2. With this upgrade JBoss Tools and all other user application will benefit from far more informative descriptions for cartridges. Further additional enhancement will make it to the library with the upcoming releases.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jiras</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_application_wizard">Application Wizard</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_use_your_own_source_template">Use your own Source Template</h3>
+              <div class="paragraph">
+              <p>OpenShift online now allow you to start an application with your very own git repository for the intial applicaiton. OpenShift tools now allow you to specify a github url in the wizard under "Advanced" and OpenShift will clone it to your application git repository and use it instead of the default template.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/advanced-source-code.png" alt="advanced-source-code"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_disable_automatic_maven_build">Disable automatic Maven Build</h3>
+              <div class="paragraph">
+              <p>When pushing a maven project to OpenShift, OpenShift will build the source in the git repository that you pushed. This is very useful when you push source code but it&#8217;s not when you push an application that you have already built as an jar,war or ear. If you rather would publish this artifact directly you no longer need the automatic builds but just need the artifact put into the deployments folder. We therefore allow you to tell the application wizard not to trigger the maven build on OpenShift when pushing. If you check this option the wizard will create a marker that gets pushed along with your war and code and tells OpenShift not to launch the maven build.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/disable-automatic-maven-build.png" alt="disable-automatic-maven-build"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>You can enable the Maven builds again by manually changing the marker files or use the Configure &gt; Configure Marker&#8230; menu.</p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_cartridge_command_line_names">Cartridge Command Line Names</h3>
+              <div class="paragraph">
+              <p>We added the cartridge id in parenthesis nex to the human understandable cartridge names so that you also have the identifier that you would use on the rhc command line.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/cartridge-labels-2.png" alt="cartridge-labels-2"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_jenkins_url_and_credentials">Jenkins URL and Credentials</h3>
+              <div class="paragraph">
+              <p>When you create an application there are cases where OpenShift will give you additional information about your new cartridge. For example when you create a jenkins instance on OpenShift. The log that will now be shown upon successful creation and will show you the url and the credentials that you need to operate it. Prior verions only showed this for embedded cartridges. Beta2 will also show these when you create applications.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/creation-log.png" alt="creation-log"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_marker_wizard">Marker Wizard</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_edit_your_markers">Edit your Markers</h3>
+              <div class="paragraph">
+              <p>OpenShift is using markers to enable or disable features. The switch to disable the maven build that we discussed above is one of these markers. The markers are files that you add to the &lt;project&gt;/.openshift/markers directory. In Beta2 we allow you to add and remove these markers by invoking a wizard from the Project- or Package-Explorer.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/openshift-configure-markers.png" alt="openshift-configure-markers"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>We show you all markers that already exist in the markers directory and all the ones that you may eventually want to add. The markers that we currently know about are:</p>
+              </div>
+              <table class="tableblock frame-all grid-all" style="width:100%; ">
+              <colgroup>
+              <col style="width:33%;">
+              <col style="width:66%;"> 
+              </colgroup>
+              <thead>
+              <tr>
+              <th class="tableblock halign-left valign-top">File</th>
+              <th class="tableblock halign-left valign-top">Effect</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">disable_auto_scaling</p></td>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">Will prevent scalable applications from scaling up or down according to application load.</p></td>
+              </tr>
+              <tr>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">enable_jpda</p></td>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">Will enable the JPDA socket based transport on the java virtual machine running the JBoss AS 7 application server. This enables you to remotely debug code running inside the JBoss AS 7 application server.</p></td>
+              </tr>
+              <tr>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">force_clean_build</p></td>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">Will start the build process by removing all non essential Maven dependencies. Any current dependencies specified in your pom.xml file will then be re-downloaded.</p></td>
+              </tr>
+              <tr>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">hot_deploy</p></td>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">Will prevent a JBoss container restart during build/deployment. Newly build archives will be re-deployed automatically by the JBoss HDScanner component.</p></td>
+              </tr>
+              <tr>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">java7</p></td>
+              <td class="tableblock halign-left valign-top"><p class="tableblock">Will run JBoss AS7 with Java7 if present. If no marker is present then the baseline Java version will be used (currently Java6).</p></td>
+              </tr>
+              </tbody>
+              </table>
+              
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/configre-markers-wizard.png" alt="configre-markers-wizard"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              <div class="paragraph">
+              <p>===Verbose Cartridge Names
+              The OpenShift Explorer lists your applications and cartridges. Along with the application and cartridge it shows you the type. So far we were showing shorthand names and changed this for Beta2: the Explorer is now using verbose labels for cartridges and decorate them with the shorthand (rhc command line identifier) name.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/better-labels-in-explorer.png" alt="better-labels-in-explorer"></span></p>
+              </div>
+              <div class="paragraph">
+              <p>Related Jira</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_application_logs">Application Logs</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_tail_files_pattern_fixed">Tail Files pattern fixed</h3>
+              <div class="paragraph">
+              <p>In order to inspect your application logs you pick "Tail Files" in the context menu of your application in the OpenShift Explorer or in the Servers view. JBoss Tools will then prompt you to provide the file pattern and options for the tail command. So far there was an issue that prevented you from limiting the output. The console was always showing the same number of lines. Fixed with Beta2.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/better-labels-in-explorer.png" alt="better-labels-in-explorer"></span></p>
               </div>
               <div class="paragraph">
               <p>Related Jira</p>
