@@ -106,175 +106,18 @@
       </div>
       <!-- activate the tab by adding the 'active' class -->
       <script>
-        document.getElementById("downloads").className += " active";
+        document.getElementById("docs").className += " active";
       </script>
       <div id="content-wrapper">
         <div class='breadcrumb'><a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/index.html'
-                >Home</a> / <a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/downloads/index.html'
-                >Downloads</a> / <a class='breadcrumb_anchor active' href='http://jbosstools.github.com/jbosstools-website/downloads/jbosstools/luna/development.html'
-                >JBoss Tools 4.2.0.Alpha1</a></div>
-        <div class="row-fluid">
-          <div class="span3 sidebar">
-            <ul class="nav nav-list">
-              <li class="nav-header">
-                Eclipse Luna 4.4 M3
-              </li>
-              <li class="active">
-                <a href="http://jbosstools.github.com/jbosstools-website/downloads/jbosstools/luna/development.html">
-                  <span>
-                    4.2.0.Alpha1
-                  </span>
-                  <span class="label label_development">
-                    Development
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="http://jbosstools.github.com/jbosstools-website/downloads/jbosstools/luna/nightly.html">
-                  <span>
-                    nightly
-                  </span>
-                  <span class="label label_nightly">
-                    Nightly
-                  </span>
-                </a>
-              </li>
-              <li class="nav-header">
-                Eclipse Kepler 4.3
-              </li>
-              <li>
-                <a href="http://jbosstools.github.com/jbosstools-website/downloads/jbosstools/kepler/stable.html">
-                  <span>
-                    4.1.1.Final
-                  </span>
-                  <span class="label label_stable">
-                    Stable
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="http://jbosstools.github.com/jbosstools-website/downloads/jbosstools/kepler/development.html">
-                  <span>
-                    4.1.1.CR1
-                  </span>
-                  <span class="label label_development">
-                    Development
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="http://jbosstools.github.com/jbosstools-website/downloads/jbosstools/kepler/nightly.html">
-                  <span>
-                    nightly
-                  </span>
-                  <span class="label label_nightly">
-                    Nightly
-                  </span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="nav-header">The Full Monty</li>
-              <li>
-                <a href="http://jbosstools.github.com/jbosstools-website/downloads/jbosstools/allversions.html">
-                  <span>
-                    All Versions
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="span9">
-            <h2 class="center">
-              JBoss Tools 4.2.0.Alpha1
-              <span class="label label_development" id="displayed-version">
-                Development
-              </span>
-            </h2>
-            <div class="center">
-              <a>Requirements</a>
-              &#124;
-              <a>What's New</a>
-              &#124;
-              <a>Release Note</a>
-            </div>
-            <div class="alert alert-info">
-              <strong>Development builds</strong>
-              are have received basic testing, but are not considered fully stable yet.
-            </div>
-            <div class="tabbable" id="installation_tabs">
-              <ul class="nav nav-tabs">
-                <li id="marketplace_tab">
-                  <a data-toggle="tab" href="#marketplace">
-                    Eclipse Marketplace
-                  </a>
-                </li>
-                <li id="update_site_tab">
-                  <a data-toggle="tab" href="#update_site">
-                    Update Site
-                  </a>
-                </li>
-                <li id="zips_tab">
-                  <a data-toggle="tab" href="#zips">
-                    Downloadable zips of the Update site
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content" id="installation-tabs-content">
-              <div class="tab-pane" id="marketplace">
-                <p>
-                  Drag and drop the
-                  <a title="Install">
-                    <img alt="Drag and drop this button into a running  workspace to install JBoss Tools" height="25" src="http://jbosstools.github.com/jbosstools-website/images/tools/installbutton.png" width="63">
-                  </a>
-                  icon on your active
-                  <strong>Eclipse Luna 4.4 M3</strong>
-                  workspace, or alternatively, search for &quot;<strong>JBoss Tools (Luna)</strong>&quot; in Eclipse via:
-                  <blockquote>
-                    Help > Eclipse Marketplace...
-                  </blockquote>
-                </p>
-                <p>
-                  You can also view the installation page on the&nbsp<a title="Eclipse Marketplace">Eclipse Marketplace</a>.
-                </p>
-              </div>
-              <div class="tab-pane" id="update_site">
-                <p>Add the following URL to your <strong>Eclipse Luna 4.4 M3</strong> workspace: <a href="{}">{}</a>
-                via </p>
-                
-                <blockquote>
-                  <p>Help &gt; Install New Software…</p>
-                </blockquote>
-                
-                <p>then select the individual features that you want to install.</p>
-              </div>
-              <div class="tab-pane" id="zips">
-                <p>You can download Update Zips (Archived p2 Repos) for offline installation of <strong>JBoss Tools</strong>, but <strong>DO NOT UNPACK THEM</strong> into your Eclipse root or dropins folder!
-                Next, install into Eclipse using</p>
-                
-                <blockquote>
-                  <p>Help &gt; Install New Software… &gt; Add… &gt; Archive…</p>
-                </blockquote>
-                
-                <p>and point to the archive you downloaded from the tables below, depending on the features of JBoss Tools you want to use.</p>
-                <table class="center">
-                  <tr>
-                    <th>Name</th>
-                    <th>Size</th>
-                    <th>Links</th>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <script>
-          $(document).ready(function () {
-            $('#installation_tabs li:not(.disabled):first>a').tab('show');
-          
-            
-          });
-        </script>
+                >Home</a> / <a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/whatsnew/index.html'
+                >What's New</a> / <a class='breadcrumb_anchor active' href='http://jbosstools.github.com/jbosstools-website/whatsnew/jst/4.1.0.html'
+                >JST/JSF/HTML 4.1.0</a></div>
+        <h1>undefined method `name' for nil:NilClass</h1>
+        <h2>Rendering file /_layouts/whatsnew_merged.html.haml resulted in a failure.</h2>
+        <p>Line: unknown</p>
+        <p>Backtrace:</p>
+        <pre>/home/travis/build/jbosstools/jbosstools-website/_layouts/whatsnew_merged.html.haml:10:in `block in singletonclass'&#x000A;/home/travis/build/jbosstools/jbosstools-website/_layouts/whatsnew_merged.html.haml:65532:in `instance_eval'&#x000A;/home/travis/build/jbosstools/jbosstools-website/_layouts/whatsnew_merged.html.haml:65532:in `singletonclass'&#x000A;/home/travis/build/jbosstools/jbosstools-website/_layouts/whatsnew_merged.html.haml:65530:in `__tilt_6031360'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/handlers/base_tilt_handler.rb:130:in `rendered_content'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/handlers/layout_handler.rb:48:in `rendered_content'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/page.rb:135:in `rendered_content'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/engine.rb:310:in `generate_page'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/engine.rb:298:in `block in generate_output'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/engine.rb:295:in `each'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/engine.rb:295:in `generate_output'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/engine.rb:74:in `run'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/cli/generate.rb:21:in `run'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/cli/invoker.rb:104:in `invoke_generate'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/lib/awestruct/cli/invoker.rb:47:in `invoke!'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/gems/awestruct-0.5.4.rc3/bin/awestruct:9:in `<top (required)>'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/bin/awestruct:23:in `load'&#x000A;/home/travis/build/jbosstools/jbosstools-website/.bundle/ruby/1.9.1/bin/awestruct:23:in `<main>'</pre>
       </div>
     </div>
     <footer class="container">
