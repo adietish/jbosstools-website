@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <id>http://jbosstools.github.com/jbosstools-website/</id>
+  <title>JBoss Tools</title>
+  <updated>2014-01-03T15:11:57+00:00</updated>
+  <link href="http://jbosstools.github.com/jbosstools-website/blog/news.atom" rel="self" type="application/atom+xml" />
+  <link href="http://jbosstools.github.com/jbosstools-website/" rel="alternate" type="text/html" />
+  <entry>
+    <id>http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html</id>
+    <title>JBoss Tools 4.1 and Red Hat JBoss Developer Studio 7 go GA</title>
+    <updated>2014-01-03T15:11:57+00:00</updated>
+    <published>2013-07-23T00:00:00+00:00</published>
+    <link href="http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html" rel="alternate" type="text/html" />
+    <author>
+      <name>fbricon</name>
+    </author>
+    <category term="jbosstools"></category>
+    <category term="jbds"></category>
+    <category term="mobile"></category>
+    <summary>
+      
+      
+      
+      On behalf of the JBoss Tools and Developer Studio team, I&#8217;m extremely proud to announce the general availability of the JBoss Tools 4.1.0.Final and Red Hat JBoss Developer Studio 7.0.0.GA releases.
+      
+      
+      JBoss Tools is a set of plugins for Eclipse that complements, enhances and goes beyond the support that exists for JBoss and related technologies in the default Eclipse distribution.
+      
+      
+      Red Hat JBoss Developer Studio is a fully bundled Eclipse distribution which not only includes the majority of JBoss Tools but also all its needed dependencies and 3rd party plugins allowing for an easy one-click and no-fuss installation.
+      
+      
+      If you are into doing...
+    </summary>
+    <content type="html">
+      &lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;On behalf of the JBoss Tools and Developer Studio team, I&amp;#8217;m extremely proud to announce the general availability of the JBoss Tools 4.1.0.Final and Red Hat JBoss Developer Studio 7.0.0.GA releases.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Tools is a set of plugins for Eclipse that complements, enhances and goes beyond the support that exists for JBoss and related technologies in the default Eclipse distribution.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Red Hat JBoss Developer Studio is a fully bundled Eclipse distribution which not only includes the majority of JBoss Tools but also all its needed dependencies and 3rd party plugins allowing for an easy one-click and no-fuss installation.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;If you are into doing your own bleeding edge Eclipse plugin assembly, JBoss Tools is for you; if you are more into having something that &quot;Just Works&quot; then JBoss Developer Studio is the way to go.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_installation&quot;&gt;Installation&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Developer Studio is available with a &lt;a href=&quot;http://devstudio.jboss.com/earlyaccess&quot;&gt;one-download-installer&lt;/a&gt; with everything bundled and configured out of the box.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can also install JBoss Developer Studio or JBoss Tools from Eclipse Marketplace via &quot;Help &amp;gt; Eclipse Marketplace&amp;#8230;&quot;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When installing from Eclipse Marketplace we recommend using a fresh &lt;a href=&quot;http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplerr&quot;&gt;Eclipse 4.3 JEE Bundle&lt;/a&gt; since then you&amp;#8217;ll have most of the dependencies pre-installed.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;admonitionblock note&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;SOA tooling for BPEL, Drools, Guvnor, jBPM, ESB, Modeshape, pi4soa, Savara, SwitchYard &amp;amp; Teiid, in future referred collectively as the JBoss Tools or JBoss Developer Studio Integration Stack (JBT-IS or JBDS-IS), are not yet available for this release. They will become available separately later. If you wish to use these today we recommend you continue to use JBoss Tools 3.3 or JBoss Developer Studio 5.0, or try one installing the latest unsupported nightly build from this update site:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.0/&quot;&gt;http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.0/&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;/tr&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_performance_and_stability_improvements&quot;&gt;Performance and stability improvements&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Tools 4.1.0 and JBDS 7.0 are built on top of Eclipse Kepler (e4.3), which brought noticeable performance and stability improvements over the previous Juno version (e4.2). But we also improved the performance in some of our own features (Central, JAX-RS tooling, Web Service testing).&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;We worked really hard to fix more than &lt;a href=&quot;https://issues.jboss.org/issues/?jql=(project%20%3D%20JBIDE%20AND%20fixVersion%20in%20(%224.1.0.CR1%22%2C%20%224.1.0.Beta2%22%2C%20%224.1.0.Beta1%22%2C%20%224.1.0.Alpha2%22%2C%20%224.1.0.Alpha1%22%2C%20%224.1.0.Final%22)%20OR%20project%20%3D%20JBDS%20AND%20fixVersion%20in%20(%227.0.0.CR1%22%2C%20%227.0.0.Beta2%22%2C%20%227.0.0.Beta1%22%2C%20%227.0.0.Alpha2%22%2C%20%227.0.0.Alpha1%22%2C%20%227.0.0.GA%22%2C%20%227.0.0.Final%22))%20AND%20resolution%20not%20in%20(Unresolved)%20ORDER%20BY%20fixVersion%20DESC&quot;&gt;1600 bugs and feature enhancements&lt;/a&gt; into this release.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;We have so much good stuff this time around, it&amp;#8217;s hard to cram everything into a (readable) blog post, so I&amp;#8217;ll just present the major features we have here, introduced since JBoss Tools 4.0 and JBDS 6.0. But make sure to read the complete &lt;a href=&quot;http://docs.jboss.org/tools/whatsnew/&quot;&gt;New and Noteworthy&lt;/a&gt; for a more detailed and complete overview.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;TL;DR: The recurring theme of this release is &quot;HTML5 and mobile development&quot;. Burr Sutter made a screencast highlighting several of the new features available in this release :&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;videoblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;iframe width=&quot;425&quot; height=&quot;350&quot; src=&quot;//player.vimeo.com/video/67480300&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_livereload&quot;&gt;LiveReload&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Probably the coolest new features we have, the new LiveReload server allows you to have your browser automatically refresh when you save your html, javascript and css files.You can just focus on content and functionality and instantly see and use the changes in your browser. If it is hard to imagine how it works, &lt;a href=&quot;https://twitter.com/xcoulon&quot;&gt;Xavier Coulon&lt;/a&gt; made a video showing how to activate and use it (on the right).&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;videoblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;iframe width=&quot;425&quot; height=&quot;350&quot; src=&quot;//www.youtube.com/embed/NGaHu4z_BLc?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You should install a LiveReload plugin/extension into your browser as documented in our &lt;a href=&quot;http://docs.jboss.org/tools/whatsnew/livereload/livereload-news-1.0.0.Alpha2.html&quot;&gt;What&amp;#8217;s New and Noteworthy&lt;/a&gt;. If you can&amp;#8217;t, don&amp;#8217;t worry, keep reading.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;LiveReload supports local (i.e. file:// based urls) or content served out from an application server. In the latter case, the browser will reload once the files are published on the application server, especially useful when editing JSF content like xhtml.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can right-click on files in the Project Explorer view or on modules deployed to a server, to load your Browser with a LiveReload enabled page. This action will setup the LiveReload server for you if it does not already exist :&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/open-with-livereload.png&quot; alt=&quot;open with livereload&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Our server implements the &lt;a href=&quot;http://feedback.livereload.com/knowledgebase/articles/86174-livereload-protocol&quot;&gt;existing defacto protocol&lt;/a&gt; used by the original LiveReload and related plug-ins, meaning any browser, script and tool that works with live reload today should work with our Eclipse implementation of it.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;It&amp;#8217;s really nice to have instant feedback for HTML5/JS based applications. But wait, it&amp;#8217;s getting even better.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_proxying_and_open_in_external_device&quot;&gt;Proxying and Open in external Device&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;If your browser does not have the LiveReload plugin, like Safari or you&amp;#8217;re using a mobile device, you would normally manually add a livereload.js loading snippet in every web page. That can be tedious and requires changes to files you might not want to commit to your source repository. It&amp;#8217;s alright. Please meet our &quot;LiveReload Proxying&quot; :&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/LiveReload_open_in_web_browser_via_qrcode-dialog.png&quot; alt=&quot;LiveReload open in web browser via qrcode dialog&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;It is enabled by checking &quot;Inject the livereload.js script in HTML pages&quot; in the LiveReload Server configuration. This allows you to proxy your file:// urls and have them served out on localhost:35729/&amp;lt;projectname&amp;gt;/&amp;lt;filepath&amp;gt; (or any other port if you choose so in the LiveReload Server configuration) .&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;admonitionblock note&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;For security reasons, remote connections are disabled by default, so if you want mobile devices to be able to load the page, just enable &quot;Allow Remote Connections&quot;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;/tr&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Now, typing a complex, long url on a mobile device can be tedious, so in order to make your life even easier, we&amp;#8217;ve added a &quot;Show In &amp;gt; Web Browser on External device&amp;#8230;&quot; menu. This will display a QR code for the LiveReload enabled url. Simply use a QR reader application and have the webpage load on your device. Watch your pages reload as you make the modifications in your IDE, it&amp;#8217;s close to black magic!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_html5_jquery_mobile_palette&quot;&gt;HTML5/JQuery Mobile Palette&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;To further improve your HTML5 / mobile development experience, we&amp;#8217;ve added a new HTML5 palette with initial support for JQuery Mobile widgets. This palette will show up when you edit HTML5 files (files with &lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/code&gt; doc type). If it does not show up, it is probably using HTML4 or XHTML content types.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The JQuery Mobile palette features a dialog preview when you click or drag one of the buttons for a component, it lets you see and customize what will be inserted :&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/lf.png&quot; alt=&quot;lf&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/set.png&quot; alt=&quot;set&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Alexey Kazakov &lt;a href=&quot;http://www.screenr.com/embed/7M57&quot;&gt;recorded a video&lt;/a&gt; to show it in action.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_browsersim_goodies&quot;&gt;BrowserSim goodies&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;BrowserSim is a mobile web browser simulator, used to test your web pages on mobile devices with a realistic mobile device skin.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Now guess what? your mobile application development experience just scored 11. In this release, we&amp;#8217;ve added a bunch of really exciting features, available with a right-click on the device bezel :&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;synched browsing : open the same web page in 2 different but synchronized browsers. You can test horizontal and landscape modes at the same time or view how layout behaves on different devices simultaneously.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;screenshot : easily take screenshots to share your awesome design or nasty bug you want someone to hunt down.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;debugging facilities : use Firebug Lite for easy local debugging, or debug remotely using any Weinre compatible server to debug/inspect the application running in BrowserSim.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;new skins galore&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/browsersim-firebug.png&quot; alt=&quot;browsersim firebug&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;admonitionblock note&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Please note BrowserSim must be launched with a 32bits JRE (you can now select it in JBossTools &amp;gt; BrowserSim / Cordova preferences) and Safari must be installed on your machine.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;/tr&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_windows_64_bit_visual_page_editor&quot;&gt;Windows 64-bit Visual Page Editor&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A long standing issue for our Visual Page Editor was the lack of proper Windows 64-bit XULRunner integration.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://community.jboss.org/people/carsten.pfeiffer&quot;&gt;Carsten Pfeiffer&lt;/a&gt; did an awesome contribution and made this happen. If you&amp;#8217;re using Windows 64 bit, and if you follow the &lt;a href=&quot;https://community.jboss.org/docs/DOC-10862&quot;&gt;JBoss Tools Visual Editor FAQ link&lt;/a&gt;, you will be told to try to install XULRunner from &lt;a href=&quot;http://download.jboss.org/jbosstools/builds/staging/xulrunner-1.9.2_win64/all/repo/&quot;&gt;http://download.jboss.org/jbosstools/builds/staging/xulrunner-1.9.2_win64/all/repo/&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Hopefully you should see the following, before and after installing the proper XulRunner version :&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/missing-xulrunner.png&quot; alt=&quot;missing xulrunner&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/vpe-win64.png&quot; alt=&quot;vpe win64&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;We would love to hear if this works for you on Windows 64-bit or if you still see problems. You can give your feedback on &lt;a href=&quot;https://issues.jboss.org/browse/JBIDE-2720&quot;&gt;this bug&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_hybrid_mobile_via_apache_cordova_experimental&quot;&gt;Hybrid Mobile via Apache Cordova (Experimental)&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;If real, cross-platform Mobile application development is your thing, we now have experimental support for developing Hybrid mobile applications with Apache Cordova.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can create an &quot;Hybrid Mobile&quot; project and test and develop it using the Android SDK and XCode for iOS testing.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/runConfigs.png&quot; alt=&quot;runConfigs&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;admonitionblock note&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This is only available as Experimental in JBoss Tools, not part of Developer Studio (yet)&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;/tr&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_cordovasim_experimental&quot;&gt;CordovaSim (Experimental)&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;To help testing hybrid mobile development we&amp;#8217;ve extended our BrowerSim to use Ripple to provide a way to do portable testing (meaning you do not necessarily need Android or XCode installed to do development)&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/CordovaSim-demo.png&quot; alt=&quot;CordovaSim demo&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;admonitionblock note&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This is only available as Experimental in JBoss Tools, not part of Developer Studio (yet)&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;/tr&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_forge_integration&quot;&gt;Forge integration&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The majority of the feedback we got for the awesome integration of Forge into Eclipse was that many preferred to use a wizard over only having access to a &quot;command line style&quot; UI.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;We listened to you and added new wizards, to give an Eclipse front-end to the following Forge features:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;Generate Entities from existing tables&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Generate REST Endpoint from Entities&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Scaffold UI (JSF or AngularJS based) from Entities&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You will find these wizards - which are Technology Preview as of this release - under &quot;File &amp;gt; New &amp;gt; JBoss Tools&quot;:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/new-forge-based-wizards.png&quot; alt=&quot;new forge based wizards&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Make sure you read a detailed description of these wizard in &lt;a href=&quot;http://docs.jboss.org/tools/whatsnew/forge/forge-news-4.1.0.Beta2.html&quot;&gt;Forge What&amp;#8217;s New&lt;/a&gt;. Oh and to make it all work, we now embed the Forge 1.3.3.Final runtime.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Please note these wizards are considered &lt;strong&gt;Technology Preview&lt;/strong&gt;, thus, even though they&amp;#8217;re included, are not supported in JBoss Developer Studio.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The long term goal is to get a closer integration between Forge and Eclipse. This is a current work in progress with Forge 2, which is now available as an &lt;em&gt;experimental&lt;/em&gt; download for JBoss Tools&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_arquillian_experimental&quot;&gt;Arquillian (Experimental)&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Arquillian Eclipse is a new JBoss Tools component that makes Java EE integration testing using &lt;a href=&quot;http://arquillian.org/&quot;&gt;Arquillian&lt;/a&gt; easier. The Arquillian support can be added/removed by right-clicking the project and selecting Configure&amp;gt;Add/Remove Arquillian support.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The project has to be a Maven (m2e) project. The &quot;Add Arquillian Support&quot; action adds the Arquillian nature to the project as well as arquillian artifacts (bom, dependencies, required plugins, profiles &amp;#8230;) to the project&amp;#8217;s pom.xml. The Remove Arquillian Support removes the Arquillian nature, but doesn&amp;#8217;t change the project&amp;#8217;s pom.xml.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A new &quot;Arquillian JUnit Test Case&quot; wizard, based on the JUnit Test Case wizard, adds the following to a created class:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;@RunWith(Arquillian.class) annotation&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;the deployment method&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/arquillian-junit-1.png&quot; alt=&quot;arquillian junit 1&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/arquillian-test-3.png&quot; alt=&quot;arquillian test 3&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Enabling Arquillian support also brings you validation, navigation across arquillian resources, launch configuration&amp;#8230; You&amp;#8217;ll most certainly want to read a more complete overview of the Arquillian support &lt;a href=&quot;http://docs.jboss.org/tools/whatsnew/arquillian/arquillian-news-4.1.0.Beta1.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;admonitionblock note&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This is only available as Experimental in JBoss Tools, not part of Developer Studio (yet)&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;/tr&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_openshift&quot;&gt;OpenShift&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;OpenShift Tools received a good deal of improvements, usability wise. Improved UI, more explicit labels where needed, but more importantly:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_git_output_streaming&quot;&gt;Git output streaming&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Ever since we added OpenShift support to Eclipse we&amp;#8217;ve had the problem that EGit did not allow streaming of console output when performing a push.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/publishing-to-openshift.png&quot; alt=&quot;publishing to openshift&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This mean that when doing a long running push Eclipse would just have a blank console and show &quot;Push in progress&quot;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;In Kepler, EGit now includes our contribution of allowing this meaning Git users and OpenShift users can and will get streaming of the console output. You can now see what is going on.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_restart_openshift_application&quot;&gt;Restart OpenShift Application&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;We&amp;#8217;ve added &quot;Restart&quot; to the UI, allowing you to trigger a node restart for your application in case something bad has happened or you changed a configuration that requires a full node restart.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/restart-application.png&quot; alt=&quot;restart application&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_create_application_from_a_remote_repository&quot;&gt;Create application from a remote repository&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Opening the advanced section of the New OpenShift Appliction wizard, you can now create an application directly seeded from a remote git repository (github for instance) instead of forcing you to use git recursive merges locally.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/advanced-source-code.png&quot; alt=&quot;advanced source code&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_configure_openshift_markers&quot;&gt;Configure OpenShift markers&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;OpenShift is using markers to enable or disable features. These markers are hidden files added to the &amp;lt;project&amp;gt;/.openshift/markers directory. You can now add/remove/edit these markers by invoking a wizard from the OpenShift &amp;gt; Configure Markers&amp;#8230; menu in th Project- or Package-Explorer.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/configure-markers-wizard.png&quot; alt=&quot;configure markers wizard&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_application_creation_logs&quot;&gt;Application creation logs&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When creating applications you want to know about the credentials that OpenShift initially set for you. This is especially helpful and required when you create a jenkins where you get its url and username/password presented. We now display what OpenShift did for you if there&amp;#8217;s anything to be noticed for any type of application and/or cartridge.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_jboss_central&quot;&gt;JBoss Central&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Central, the welcome screen of JBDS / JBoss Tools has a new design. We&amp;#8217;ve tried to make it easier for you to get started building new applications, providing more samples, displaying descriptions of what each wizard gives you.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/jboss_central.png&quot; alt=&quot;jboss central&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can also access wizards for features you haven&amp;#8217;t installed yet, such as the OpenShift Application. You&amp;#8217;ll be prompted to install the required OpenShift Tools feature if you haven&amp;#8217;t installed it already.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;In the software/update tab, you&amp;#8217;ll find we have added VJet, a promising new JavaScript editor, which should help you build, you know, HTML5 and mobile applications.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_servers_and_runtimes&quot;&gt;Servers and runtimes&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_new_server_adapters&quot;&gt;New server adapters&lt;/h3&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;JBoss EAP 6.1, freely available to developers (you can get it from the JBoss AS download page), now has its own server adapter.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;WildFly now also has its own dedicated server adapter. Please note it&amp;#8217;s still considered experimental as WildFly itself is not stabilized to this day. We recommend using the latest Alpha-3 release, which fixes some file locking issue on windows and now support JSP development mode.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/new-server-adapters.png&quot; alt=&quot;new server adapters&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_better_server_identification&quot;&gt;Better server identification&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Servers derived from JBoss AS 7.x (JPP, SOA-P, GateIn), are now properly identified, making searching runtimes easier to setup. We now reuse the stacks.yml descriptor provided by the JBoss Developer Framework to provide downloads of different runtimes and thus providing a consistent experience, as part of the JBoss Way initiative.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_better_server_management&quot;&gt;Better server management&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Server tools now uses the AS 7.x/EAP/WildFly management api, allowing for faster and more reliable (re)starts of servers, as well as better module management (individual module restart, status information).&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_tomcat_runtime_detection_jboss_tools_only&quot;&gt;Tomcat runtime detection (JBoss Tools only)&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A new Tomcat runtime feature detection allows you to automatically detect and create tomcat-based servers, after scanning a specified server directory.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_maven_integration&quot;&gt;Maven Integration++&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_m2e_1_4_0_and_m2e_wtp_1_0_0&quot;&gt;m2e 1.4.0 and m2e-wtp 1.0.0&lt;/h3&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;JBDS comes with m2e 1.4.0 which brings some performance enhancements, as well as a very convenient Alt-F5 shortcut, to update project configuration, when it&amp;#8217;s gone out-of-synch.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;we contributed the JBoss JPA/JSF/JAX-RS configurators to the &lt;a href=&quot;http://www.eclipse.org/m2e-wtp/&quot;&gt;m2e-wtp project at eclipse.org&lt;/a&gt;, which just graduated from the Eclipse Incubator into version 1.0.0, adding support to Java EE 7.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;In this Kepler release the configuration of these configurators moved under the Preferences &amp;gt; Maven &amp;gt; Java EE Integration.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_automatic_source_lookup_for_the_masses&quot;&gt;Automatic Source Lookup for the masses&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Ever tasted m2e&amp;#8217;s awesome automatic source download but were frustrated when going back to work on legacy, non-maven projects? Then rejoice, we now enable automatic source lookup for &lt;strong&gt;all&lt;/strong&gt;, &lt;strong&gt;non-maven&lt;/strong&gt; java projects.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The automatic Source Lookup feature is based on Maven/m2e. As such, downloaded sources will be stored under your local Maven repository.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Since JDT doesn&amp;#8217;t support variables in source attachments (such as M2_REPO), source attachments use absolute (non-portable) paths. It&amp;#8217;s ok when the jar is part of a Classpath Library, since the path is stored in your own workspace. But it can become a problem if your jar dependency is listed in your project&amp;#8217;s .classpath descriptor, potentially shared with other developers. For this reason, by default, you&amp;#8217;ll be warned when a compatible source has been found :&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/automatic-source-lookup.png&quot; alt=&quot;automatic source lookup&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The good news is the source lookup mechanism is capable of fixing bad source attachements, even for Maven enabled projects. If the attached source doesn&amp;#8217;t exist (ex. you wiped out your maven local repository or shared hard-coded source attachments in your scm) or doesn&amp;#8217;t contain the right source files, it will try to download the proper source.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_maven_repository_edition&quot;&gt;Maven repository edition&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Maven Repositories defined in profiles in your settings.xml (Window &amp;gt; Preferences &amp;gt; JBoss Tools &amp;gt; Maven Integration &amp;gt; Configure Maven Repositories&amp;#8230;) can now be edited with the &quot;Edit Repository&amp;#8230;&quot; button :&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img src=&quot;./images/edit-maven-repositories.png&quot; alt=&quot;edit maven repositories&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_and_much_more&quot;&gt;And much more&amp;#8230;&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;There&amp;#8217;s not enough room here to list all the great things the team managed to pull. Better JAX-RS tooling performance, JSF 2.2 and updated Deltaspike support, improved web service tester (now using JBoss Wise). So, again, make sure you take a look at the news and screenshots in our &lt;a href=&quot;http://docs.jboss.org/tools/whatsnew&quot;&gt;What&amp;#8217;s New&lt;/a&gt; page.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_giving_feedback&quot;&gt;Giving Feedback&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Please don&amp;#8217;t hesitate to use our forum to ask questions, or, if you have ideas to better improve JBoss Tools / JBDS, or found a bug, then open an issue in our &lt;a href=&quot;https://jira.jboss.org/jira/browse/JBIDE&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;_what_s_next&quot;&gt;What&amp;#8217;s Next ?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;First, some of us are gonna take a tiny bit of rest in the coming weeks. Then we&amp;#8217;ll work on a service release, mainly focused on bug fixes, to accompany the Eclipse Kepler SR1 release in september. Hopefully, new features should see the light of day by the end of the year.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Have fun!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Fred Bricon&lt;br&gt;&lt;a href=&quot;https://twitter.com/fbricon&quot;&gt;https://twitter.com/fbricon&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html</id>
+    <title>show-domain-info: openshift-java-client in a nutshell</title>
+    <updated>2014-01-03T15:11:57+00:00</updated>
+    <published>2012-08-24T00:00:00+00:00</published>
+    <link href="http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html" rel="alternate" type="text/html" />
+    <author>
+      <name>adietish</name>
+    </author>
+    <category term="OpenShift"></category>
+    <category term="Java"></category>
+    <summary>
+      
+      At JBoss Tools we created a java client that allows you to talk to the OpenShift PaaS: openshift-java-client. The library is already used in the OpenShift tooling in JBoss Tools, the Forge plugin and Appcelerator Titanium Studio's tooling for OpenShift. This blog post will show you how to use okthis API in your very own java programs. We'll develop a command line tool that displays informations equivalent to what you get when running rhc domain show with the OpenShift command line tools: it displays basic informations about your user.
+      
+      ================
+      Namespace: andre
+        RHLogin: andre.dietisheim@redhat.com
+      
+      Application Info
+      ================
+      kitchensink
+          Framework: jbossas-7
+       ...
+    </summary>
+    <content type="html">
+      
+      &lt;p&gt;At JBoss Tools we created a java client that allows you to talk to the &lt;a href=&quot;https://openshift.redhat.com/app/&quot;&gt;OpenShift&lt;/a&gt; PaaS: &lt;a href=&quot;https://github.com/openshift/openshift-java-client&quot;&gt;openshift-java-client&lt;/a&gt;. The library is already used in the &lt;a href=&quot;https://community.jboss.org/en/tools/blog/tags/openshift&quot;&gt;OpenShift tooling&lt;/a&gt; in &lt;a href=&quot;http://www.jboss.org/tools/&quot;&gt;JBoss Tools&lt;/a&gt;, the &lt;a href=&quot;https://github.com/forge/plugin-openshift-express/&quot;&gt;Forge plugin&lt;/a&gt; and &lt;a href=&quot;http://www.appcelerator.com/platform/titanium-studio&quot;&gt;Appcelerator Titanium Studio&lt;/a&gt;'s tooling for OpenShift. This blog post will show you how to use okthis API in your very own java programs. We'll develop a command line tool that displays informations equivalent to what you get when running &lt;strong&gt;rhc domain show&lt;/strong&gt; with the &lt;a href=&quot;href=%22https://openshift.redhat.com/community/developers/install-the-client-tools&quot;&gt;OpenShift command line tools&lt;/a&gt;: it displays basic informations about your user.&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;================
+      Namespace: andre
+        RHLogin: andre.dietisheim@redhat.com
+      
+      Application Info
+      ================
+      kitchensink
+          Framework: jbossas-7
+           Creation: 2012-08-10T11:24:13-04:00
+               UUID: 8ad0d94f39aa4295a0049de8b8b5ef55
+            Git URL: ssh:&amp;lt;SOMEID&amp;gt;@kitchensink-andre.rhcloud.com/~/git/kitchensink.git/
+         Public URL: http://kitchensink-andre.rhcloud.com/
+      
+       Embedded: 
+           jenkins-client-1.4 - Job URL: https://jenk-andre.rhcloud.com/job/kitchensink-build/
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;You'll find the sourcecode for this example at github: &lt;a href=&quot;https://github.com/adietish/show-domain-info&quot;&gt;https://github.com/adietish/show-domain-info&lt;/a&gt;. All the code that is shown in this blog is contained within the &lt;a href=&quot;https://github.com/adietish/show-domain-info/blob/master/src/main/java/com/redhat/openshift/examples/domaininfo/Main.java&quot;&gt;Main&lt;/a&gt; class.&lt;/p&gt;
+      
+      &lt;p&gt;If you want to dig futher, you'll get a more complete example that includes jenkins in &lt;a href=&quot;https://community.jboss.org/docs/DOC-19828&quot;&gt;this wiki article&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;h1 id=&quot;openshift-java-client-20&quot;&gt;Openshift-java-client 2.0&lt;/h1&gt;
+      
+      &lt;p&gt;The &lt;a href=&quot;https://github.com/openshift/openshift-java-client&quot;&gt;openshift-java-client&lt;/a&gt; is a java library that allows java programs to talk to the OpenShift PaaS. It talks to the new OpenShift &lt;a href=&quot;https://openshift.redhat.com/community/sites/default/files/documents/OpenShift-2.0-REST_API_Guide-en-US.pdf&quot;&gt;RESTful service&lt;/a&gt; and allows users to create, modify and destroy OpenShift resources: domains, applications, cartridges, etc. It is hosted on github at &lt;a href=&quot;https://github.com/openshift/openshift-java-client&quot;&gt;https://github.com/openshift/openshift-java-client&lt;/a&gt; and is available under the &lt;a href=&quot;http://www.eclipse.org/legal/epl-v10.html&quot;&gt;Eclipse Public License&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;
+      Openshift-java-client 1.x was talking to the legacy service in OpenShift. 2.0 switched to the new RESTful service.
+      The legacy service is not maintained any more and will fade away at some point. Users of the 1.x client should migrate to the 2.0 client.
+      The migration should be pretty much without hassles. Even though 2.0 is a complete rewrite, the API stayed pretty much the same/very close.&lt;/p&gt;
+      
+      &lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
+      
+      &lt;ul&gt;
+      &lt;li&gt;You need an account on OpenShift. (If you have no account yet, you'd have to &lt;a href=&quot;https://openshift.redhat.com/app/account/new&quot;&gt;signup&lt;/a&gt; first)&lt;/li&gt;
+        &lt;li&gt;Make sure you have an OpenShift domain and some applications (to get some meaningful output)&lt;/li&gt;
+      &lt;/ul&gt;&lt;h1 id=&quot;launch-parameters&quot;&gt;Launch Parameters&lt;/h1&gt;
+      
+      &lt;p&gt;To keep the implemenation simple, the program we're about to write, only accept 2 parameters on the command line:&lt;/p&gt;
+      
+      &lt;ol&gt;
+      &lt;li&gt;username&lt;/li&gt;
+        &lt;li&gt;password&lt;/li&gt;
+      &lt;/ol&gt;&lt;p&gt;Launching the program with maven would look like this:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;mvn test -Dusername=&amp;lt;username&amp;gt; -Dpassword=&amp;lt;password&amp;gt;
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;h1 id=&quot;project-setup&quot;&gt;Project Setup&lt;/h1&gt;
+      
+      &lt;p&gt;We have to make sure that we have the &lt;a href=&quot;https://github.com/openshift/openshift-java-client&quot;&gt;openshift-java-client&lt;/a&gt; available on our classpath. The client library is available at &lt;a href=&quot;%22https://github.com/openshift/openshift-java-client&quot;&gt;https://github.com/openshift/openshift-java-client&lt;/a&gt;. You could clone the repo and build your own jar by telling maven to &quot;mvn clean package&quot;. But even simpler is to add it as dependency to your &lt;a href=&quot;%22https://github.com/adietish/show-domain-info/blob/master/pom.xml#L8&quot;&gt;pom.xml&lt;/a&gt;, since the client library is also available from central as maven artifact:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
+        &amp;lt;groupId&amp;gt;com.openshift&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;openshift-java-client&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;2.0.0&amp;lt;/version&amp;gt;
+      &amp;lt;/dependency&amp;gt;
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;h1 id=&quot;connect-to-openshift&quot;&gt;Connect to OpenShift&lt;/h1&gt;
+      
+      &lt;p&gt;After we did some basic command line parameter parsing (that we skipped here on puropose) we'd have to get in touch with the OpenShift PaaS. Using the &lt;a href=&quot;https://github.com/openshift/openshift-java-client&quot;&gt;openshift-java-client&lt;/a&gt; you'd tell the &lt;a href=&quot;https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/OpenShiftConnectionFactory.java&quot;&gt;OpenShiftConnectionFactory&lt;/a&gt; to create a connection for you. To create this connection you'll have to provide some parameters:&lt;/p&gt;
+      
+      &lt;h3 id=&quot;server-url&quot;&gt;Server url&lt;/h3&gt;
+      
+      &lt;p&gt;First of all you need to give it the url of the OpenShift PaaS. You may either hard code it or ask the OpenShift configuration for it:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;new OpenShiftConfiguration().getLibraServer()
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;The OpenShiftConfiguration class parses the OpenShift &lt;a href=&quot;http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/Getting_Started_Guide/sect-Getting_Started_Guide-OpenShift_Client_Tools-Configuring_Client_Tools.html&quot;&gt;configuration files&lt;/a&gt; you may have on your machine (~/.openshift/express.conf, C:/Documents and Settings/user/.openshift/express.conf, etc.). Those usually get created once you installed the &lt;a href=&quot;http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/User_Guide/chap-User_Guide-OpenShift_Command_Line_Interface.html&quot;&gt;rhc command line&lt;/a&gt; tools. In case you don't have any configuration yet, &lt;a href=&quot;href=%22https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/OpenShiftConfiguration.java&quot;&gt;OpenShiftConfiguration&lt;/a&gt; holds some meaningful &lt;a href=&quot;https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/DefaultConfiguration.java&quot;&gt;defaults&lt;/a&gt; and points to &lt;a href=&quot;http://openshift.redhat.com&quot;&gt;http://openshift.redhat.com&lt;/a&gt;. On the other hand, our configuration class also allows you to override settings by putting them to the &lt;a href=&quot;https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/SystemProperties.java&quot;&gt;system configuration&lt;/a&gt; as you would do if you want to switch to the OpenShift &lt;a href=&quot;https://openshift.redhat.com/community/wiki/getting-started-with-openshift-origin-livecd&quot;&gt;LiveCD&lt;/a&gt; temporarly. You would then simply add the following to the command line when launching the java virtual machine:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;-Dlibra_server=127.0.0.1
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;h3 id=&quot;client-id&quot;&gt;Client id&lt;/h3&gt;
+      
+      &lt;p&gt;The connection factory also requires you to provide your very own client id. This client id is used when the openshift-java-client talks to the OpenShift REST service. It'll get included in the user-agent string that tells OpenShift what client it is talking to. We use the name of our example, &lt;strong&gt;show-domain-info&lt;/strong&gt;.&lt;/p&gt;
+      
+      &lt;h3 id=&quot;username-and-password&quot;&gt;Username and Password&lt;/h3&gt;
+      
+      &lt;p&gt;Last but not least, you also have to give it your OpenShift credentials, the ones we got from the command-line.&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;String openshiftServer = new OpenShiftConfiguration().getLibraServer();
+      IOpenShiftConnection connection = new OpenShiftConnectionFactory()
+        .getConnection(&quot;show-domain-info&quot;, &quot;myuser&quot;, &quot;mypassword&quot;, openshiftServer);
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;Once you have your connection you can get a &lt;a href=&quot;https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/IUser.java&quot;&gt;IUser&lt;/a&gt; instance which will allow you to create your domain and applications:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;IUser user = connection.getUser();
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;The first information block involves basic user informations. The username is available from your &lt;a href=&quot;https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/IUser.java&quot;&gt;IUser&lt;/a&gt; instance:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;System.out.println(&quot;RHLogin:\t&quot; + user.getRhlogin());
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;The other value that we want to display, the domain namespace, is accessible from your OpenShift &lt;a href=&quot;https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/IDomain.java&quot;&gt;IDomain&lt;/a&gt;. We'll get it from the the user instance and print its id (namespace).&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;IDomain domain = user.getDefaultDomain();
+      System.out.println(&quot;Namespace:\t&quot; + domain.getId());
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;h1 id=&quot;print-the-application-infos&quot;&gt;Print the Application Infos&lt;/h1&gt;
+      
+      &lt;p&gt;The second portion printed by &lt;strong&gt;rhc domain show&lt;/strong&gt; is reporting your users applications. All OpenShift applications are held in a list within your domain. We simply get the list and iterate over it's entries:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;for (IApplication application : domain.getApplications()) {
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;The required values - name, framework, creation time etc. - are now available within each &lt;a href=&quot;https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/IApplication.java&quot;&gt;IApplication&lt;/a&gt; instance:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;System.out.println(application.getName());
+      System.out.println(&quot;\tFramework:\t&quot; + application.getCartridge().getName());
+      System.out.println(&quot;\tCreation:\t&quot; + application.getCreationTime());
+      System.out.println(&quot;\tUUID:\t\t&quot; + application.getUUID());
+      System.out.println(&quot;\tGit URL:\t&quot; + application.getGitUrl());
+      System.out.println(&quot;\tPublic URL:\t&quot; + application.getApplicationUrl() + &quot;\n&quot;);
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;An application may have several cartridges embedded (MySql, Postgres, Jenkins etc.). These cartridges are reported by by the application. We get the list of cartridges and inspect at each of them:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;for(IEmbeddedCartridge cartridge : application.getEmbeddedCartridges()) {
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;We then want to know bout a cartridge's &lt;a href=&quot;https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/IEmbeddedCartridge.java&quot;&gt;IEmbeddableCartridge&lt;/a&gt;, name and url:&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;System.out.println(&quot;\t&quot; + cartridge.getName() + &quot; - URL:&quot; + cartridge.getUrl());
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;That is it - you now have an app that can talk to OpenShift via its &lt;a href=&quot;https://openshift.redhat.com/community/sites/default/files/documents/OpenShift-2.0-REST_API_Guide-en-US.pdf&quot;&gt;REST API&lt;/a&gt;. If you want to do more we also have this &lt;a href=&quot;https://community.jboss.org/docs/DOC-19828&quot;&gt;article&lt;/a&gt; that shows how to perform actual operations against your OpenShift applications. &lt;/p&gt;
+      
+      &lt;p&gt;Hope you enjoy it and let us know what you build with it!&lt;/p&gt;
+    </content>
+  </entry>
+</feed>
