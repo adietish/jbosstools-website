@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <meta content="Thu, 02 Jan 2014 16:39:37 UTC" http-equiv="Last-Modified">
+    <meta content="Fri, 03 Jan 2014 10:01:43 UTC" http-equiv="Last-Modified">
     <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
     <!-- IE 6-8 support of HTML 5 elements -->
     <!--[if lt IE 9]>
@@ -111,7 +111,7 @@
       <div id="content-wrapper">
         <div class='breadcrumb'><a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/index.html'
                 >Home</a> / <a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/whatsnew/index.html'
-                >What's New</a> / <a class='breadcrumb_anchor active' href='http://jbosstools.github.com/jbosstools-website/whatsnew/livereload/1.0.0.html'
+                >Index</a> / <a class='breadcrumb_anchor active' href='http://jbosstools.github.com/jbosstools-website/whatsnew/livereload/1.0.0.html'
                 >LiveReload 1.0.0</a></div>
         <div class="row-fluid">
           <div class="span2 sidebar">
@@ -212,14 +212,18 @@
               <div class="paragraph">
               <p>In the Project Explorer and Package Explorer, the contextual menu has been filled with a new "Open With&gt;Web Browser via LiveReload Proxy" action. This latter one opens the selected file in the Web Browser, but instead of using the file:// protocol, it uses the http:// protocol and connects to the LiveReload embedded proxy.</p>
               </div>
-              <div class="paragraph">
-              <p><span class="image"><img src="./images/LiveReload_open_in_web_browser_via_proxy.png" alt="LiveReload_open_in_web_browser_via_proxy"></span></p>
+              <div class="imageblock">
+              <div class="content">
+              <img src="./images/LiveReload_open_in_web_browser_via_proxy.png" alt="LiveReload open in web browser via proxy">
+              </div>
               </div>
               <div class="paragraph">
               <p>For security reasons, the proxy is disabled by default. Once enabled, it may optionally accept remote connections if you want to enable LiveReload from remote devices or remote computers. For users wanting to use the BrowserSim with LiveReload, there is no need to allow for remote connections.</p>
               </div>
-              <div class="paragraph">
-              <p><span class="image"><img src="./images/LiveReload_open_in_web_browser_via_proxy.png" alt="LiveReload_open_in_web_browser_via_proxy"></span></p>
+              <div class="imageblock">
+              <div class="content">
+              <img src="./images/LiveReload_open_in_web_browser_via_proxy.png" alt="LiveReload open in web browser via proxy">
+              </div>
               </div>
               <div class="paragraph">
               <p>In any case, only workspace projects files are exposed by this Proxy.</p>
@@ -241,20 +245,26 @@
               <div class="paragraph">
               <p>As a user, you first need to create a "LiveReload" server in the Servers View and start it.</p>
               </div>
-              <div class="paragraph">
-              <p><span class="image"><img src="./images/livereload_serversview.png" alt="livereload_serversview"></span></p>
+              <div class="imageblock">
+              <div class="content">
+              <img src="./images/livereload_serversview.png" alt="livereload serversview">
+              </div>
               </div>
               <div class="paragraph">
               <p>By default, the LiveReload server and the browser extension communicate with Web Sockets over the 35729 port, but this can be configured.</p>
               </div>
-              <div class="paragraph">
-              <p><span class="image"><img src="./images/livereload_server_configuration.png" alt="livereload_server_configuration"></span></p>
+              <div class="imageblock">
+              <div class="content">
+              <img src="./images/livereload_server_configuration.png" alt="livereload server configuration">
+              </div>
               </div>
               <div class="paragraph">
               <p>Then, you just have to select a file in your workspace and in the contextual menu, use the "Open With &gt; Web Browser" command.</p>
               </div>
-              <div class="paragraph">
-              <p><span class="image"><img src="./images/livereload_openwithbrowser.png" alt="livereload_openwithbrowser"></span></p>
+              <div class="imageblock">
+              <div class="content">
+              <img src="./images/livereload_openwithbrowser.png" alt="livereload openwithbrowser">
+              </div>
               </div>
               <div class="paragraph">
               <p>The file will open in your default Web Browser. From there, you activate the LiveReload extension (see below for instructions on how to install it on Chrome and Firefox). Then, each time you save the file, it is automatically refreshed in the browser.</p>
