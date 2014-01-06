@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <meta content="Mon, 06 Jan 2014 11:16:55 UTC" http-equiv="Last-Modified">
+    <meta content="Mon, 06 Jan 2014 19:51:15 UTC" http-equiv="Last-Modified">
     <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
     <!-- IE 6-8 support of HTML 5 elements -->
     <!--[if lt IE 9]>
@@ -747,11 +747,11 @@
               </div>
               <div class="body">
                 
-                <p>At JBoss Tools we created a java client that allows you to talk to the <a href="https://openshift.redhat.com/app/">OpenShift</a> PaaS: <a href="https://github.com/openshift/openshift-java-client">openshift-java-client</a>. The library is already used in the <a href="https://community.jboss.org/en/tools/blog/tags/openshift">OpenShift tooling</a> in <a href="http://www.jboss.org/tools/">JBoss Tools</a>, the <a href="https://github.com/forge/plugin-openshift-express/">Forge plugin</a> and <a href="http://www.appcelerator.com/platform/titanium-studio">Appcelerator Titanium Studio</a>'s tooling for OpenShift. This blog post will show you how to use okthis API in your very own java programs. We'll develop a command line tool that displays informations equivalent to what you get when running <strong>rhc domain show</strong> with the <a href="href=&quot;https://openshift.redhat.com/community/developers/install-the-client-tools">OpenShift command line tools</a>: it displays basic informations about your user.</p>
+                <p>At JBoss Tools we created a java client that allows you to talk to the <a href="https://openshift.redhat.com/app/">OpenShift</a> PaaS: <a href="https://github.com/openshift/openshift-java-client">openshift-java-client</a>. The library is already used in the <a href="https://community.jboss.org/en/tools/blog/tags/openshift">OpenShift tooling</a> in <a href="http://www.jboss.org/tools/">JBoss Tools</a>, the <a href="https://github.com/forge/plugin-openshift/">Forge plugin</a> and <a href="http://www.appcelerator.com/platform/titanium-studio">Appcelerator Titanium Studio</a>'s tooling for OpenShift. This blog post will show you how to use this API in your very own java programs. We'll develop a command line tool that displays informations equivalent to what you get when running <strong>rhc domain show</strong> with the <a href="https://openshift.redhat.com/community/developers/install-the-client-tools">OpenShift command line tools</a>: it displays basic informations about your user.</p>
                 
                 <pre><code>================&#x000A;        Namespace: andre&#x000A;          RHLogin: andre.dietisheim@redhat.com&#x000A;        &#x000A;        Application Info&#x000A;        ================&#x000A;        kitchensink&#x000A;            Framework: jbossas-7&#x000A;             Creation: 2012-08-10T11:24:13-04:00&#x000A;                 UUID: 8ad0d94f39aa4295a0049de8b8b5ef55&#x000A;              Git URL: ssh:&lt;SOMEID&gt;@kitchensink-andre.rhcloud.com/~/git/kitchensink.git/&#x000A;           Public URL: http://kitchensink-andre.rhcloud.com/&#x000A;        &#x000A;         Embedded: &#x000A;             jenkins-client-1.4 - Job URL: https://jenk-andre.rhcloud.com/job/kitchensink-build/&#x000A;        </code></pre>
                 
-                <p>You'll find the sourcecode for this example at github: <a href="https://github.com/adietish/show-domain-info">https://github.com/adietish/show-domain-info</a>. All the code that is shown in this blog is contained within the <a href="https://github.com/adietish/show-domain-info/blob/master/src/main/java/com/redhat/openshift/examples/domaininfo/Main.java">Main</a> class.</p>
+                <p>You'll find the sourcecode for this example at github: <a href="https://github.com/openshift/show-domain-info">https://github.com/openshift/show-domain-info</a>. All the code that is shown in this blog is contained within the <a href="https://github.com/openshift/show-domain-info/blob/master/src/main/java/com/redhat/openshift/examples/domaininfo/Main.java">Main</a> class.</p>
                 
                 <p>If you want to dig futher, you'll get a more complete example that includes jenkins in <a href="https://community.jboss.org/docs/DOC-19828">this wiki article</a>.</p>
                 
@@ -786,13 +786,13 @@
                 
                 <h1 id="project-setup">Project Setup</h1>
                 
-                <p>We have to make sure that we have the <a href="https://github.com/openshift/openshift-java-client">openshift-java-client</a> available on our classpath. The client library is available at <a href="&quot;https://github.com/openshift/openshift-java-client">https://github.com/openshift/openshift-java-client</a>. You could clone the repo and build your own jar by telling maven to "mvn clean package". But even simpler is to add it as dependency to your <a href="&quot;https://github.com/adietish/show-domain-info/blob/master/pom.xml#L8">pom.xml</a>, since the client library is also available from central as maven artifact:</p>
+                <p>We have to make sure that we have the <a href="https://github.com/openshift/openshift-java-client">openshift-java-client</a> available on our classpath. The client library is available at <a href="&quot;https://github.com/openshift/openshift-java-client">https://github.com/openshift/openshift-java-client</a>. You could clone the repo and build your own jar by telling maven to "mvn clean package". But even simpler is to add it as dependency to your <a href="&quot;https://github.com/openshift/show-domain-info/blob/master/pom.xml#L8">pom.xml</a>, since the client library is also available from central as maven artifact:</p>
                 
                 <pre><code>&lt;dependency&gt;&#x000A;          &lt;groupId&gt;com.openshift&lt;/groupId&gt;&#x000A;          &lt;artifactId&gt;openshift-java-client&lt;/artifactId&gt;&#x000A;          &lt;version&gt;2.0.0&lt;/version&gt;&#x000A;        &lt;/dependency&gt;&#x000A;        </code></pre>
                 
                 <h1 id="connect-to-openshift">Connect to OpenShift</h1>
                 
-                <p>After we did some basic command line parameter parsing (that we skipped here on puropose) we'd have to get in touch with the OpenShift PaaS. Using the <a href="https://github.com/openshift/openshift-java-client">openshift-java-client</a> you'd tell the <a href="https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/OpenShiftConnectionFactory.java">OpenShiftConnectionFactory</a> to create a connection for you. To create this connection you'll have to provide some parameters:</p>
+                <p>After we did some basic command line parameter parsing (that we skipped here on puropose) we'd have to get in touch with the OpenShift PaaS. Using the <a href="https://github.com/openshift/openshift-java-client">openshift-java-client</a> you'd tell the <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/OpenShiftConnectionFactory.java">OpenShiftConnectionFactory</a> to create a connection for you. To create this connection you'll have to provide some parameters:</p>
                 
                 <h3 id="server-url">Server url</h3>
                 
@@ -800,7 +800,7 @@
                 
                 <pre><code>new OpenShiftConfiguration().getLibraServer()&#x000A;        </code></pre>
                 
-                <p>The OpenShiftConfiguration class parses the OpenShift <a href="http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/Getting_Started_Guide/sect-Getting_Started_Guide-OpenShift_Client_Tools-Configuring_Client_Tools.html">configuration files</a> you may have on your machine (~/.openshift/express.conf, C:/Documents and Settings/user/.openshift/express.conf, etc.). Those usually get created once you installed the <a href="http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/User_Guide/chap-User_Guide-OpenShift_Command_Line_Interface.html">rhc command line</a> tools. In case you don't have any configuration yet, <a href="href=&quot;https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/OpenShiftConfiguration.java">OpenShiftConfiguration</a> holds some meaningful <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/DefaultConfiguration.java">defaults</a> and points to <a href="http://openshift.redhat.com">http://openshift.redhat.com</a>. On the other hand, our configuration class also allows you to override settings by putting them to the <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/SystemProperties.java">system configuration</a> as you would do if you want to switch to the OpenShift <a href="https://openshift.redhat.com/community/wiki/getting-started-with-openshift-origin-livecd">LiveCD</a> temporarly. You would then simply add the following to the command line when launching the java virtual machine:</p>
+                <p>The OpenShiftConfiguration class parses the OpenShift <a href="http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/Getting_Started_Guide/sect-Getting_Started_Guide-OpenShift_Client_Tools-Configuring_Client_Tools.html">configuration files</a> you may have on your machine (~/.openshift/express.conf, C:/Documents and Settings/user/.openshift/express.conf, etc.). Those usually get created once you installed the <a href="http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/User_Guide/chap-User_Guide-OpenShift_Command_Line_Interface.html">rhc command line</a> tools. In case you don't have any configuration yet, <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/OpenShiftConfiguration.java">OpenShiftConfiguration</a> holds some meaningful <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/DefaultConfiguration.java">defaults</a> and points to <a href="http://openshift.redhat.com">http://openshift.redhat.com</a>. On the other hand, our configuration class also allows you to override settings by putting them to the <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/configuration/SystemProperties.java">system configuration</a> as you would do if you want to switch to the OpenShift <a href="https://openshift.redhat.com/community/wiki/getting-started-with-openshift-origin-livecd">LiveCD</a> temporarly. You would then simply add the following to the command line when launching the java virtual machine:</p>
                 
                 <pre><code>-Dlibra_server=127.0.0.1&#x000A;        </code></pre>
                 
@@ -818,11 +818,11 @@
                 
                 <pre><code>IUser user = connection.getUser();&#x000A;        </code></pre>
                 
-                <p>The first information block involves basic user informations. The username is available from your <a href="https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/IUser.java">IUser</a> instance:</p>
+                <p>The first information block involves basic user informations. The username is available from your <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/IUser.java">IUser</a> instance:</p>
                 
                 <pre><code>System.out.println("RHLogin:\t" + user.getRhlogin());&#x000A;        </code></pre>
                 
-                <p>The other value that we want to display, the domain namespace, is accessible from your OpenShift <a href="https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/IDomain.java">IDomain</a>. We'll get it from the the user instance and print its id (namespace).</p>
+                <p>The other value that we want to display, the domain namespace, is accessible from your OpenShift <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/IDomain.java">IDomain</a>. We'll get it from the the user instance and print its id (namespace).</p>
                 
                 <pre><code>IDomain domain = user.getDefaultDomain();&#x000A;        System.out.println("Namespace:\t" + domain.getId());&#x000A;        </code></pre>
                 
@@ -832,7 +832,7 @@
                 
                 <pre><code>for (IApplication application : domain.getApplications()) {&#x000A;        </code></pre>
                 
-                <p>The required values - name, framework, creation time etc. - are now available within each <a href="https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/IApplication.java">IApplication</a> instance:</p>
+                <p>The required values - name, framework, creation time etc. - are now available within each <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/IApplication.java">IApplication</a> instance:</p>
                 
                 <pre><code>System.out.println(application.getName());&#x000A;        System.out.println("\tFramework:\t" + application.getCartridge().getName());&#x000A;        System.out.println("\tCreation:\t" + application.getCreationTime());&#x000A;        System.out.println("\tUUID:\t\t" + application.getUUID());&#x000A;        System.out.println("\tGit URL:\t" + application.getGitUrl());&#x000A;        System.out.println("\tPublic URL:\t" + application.getApplicationUrl() + "\n");&#x000A;        </code></pre>
                 
@@ -840,7 +840,7 @@
                 
                 <pre><code>for(IEmbeddedCartridge cartridge : application.getEmbeddedCartridges()) {&#x000A;        </code></pre>
                 
-                <p>We then want to know bout a cartridge's <a href="https://github.com/adietish/openshift-java-client/blob/master/src/main/java/com/openshift/client/IEmbeddedCartridge.java">IEmbeddableCartridge</a>, name and url:</p>
+                <p>We then want to know bout a cartridge's <a href="https://github.com/openshift/openshift-java-client/blob/master/src/main/java/com/openshift/client/IEmbeddedCartridge.java">IEmbeddableCartridge</a>, name and url:</p>
                 
                 <pre><code>System.out.println("\t" + cartridge.getName() + " - URL:" + cartridge.getUrl());&#x000A;        </code></pre>
                 
