@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JBoss Tools</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="Tue, 07 Jan 2014 11:30:00 UTC" http-equiv="Last-Modified">
+    <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
+    <!-- IE 6-8 support of HTML 5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://static.jboss.org/theme/js/libs/html5/pre3.6/html5.min.js"></script>
+    <![endif]-->
+    <!-- Defines the project favicon. Change these URLs to your specific project folder on static.jboss.org. -->
+    <link href="http://static.jboss.org/images/tools/favicon.ico" rel="shortcut icon">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="http://jbosstools.github.com/jbosstools-website/stylesheets/jbt-styles.css" rel="stylesheet" type="text/css">
+    <link href="http://jbosstools.github.com/jbosstools-website/fonts/font-awesome/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <!-- Defines the project banner. Change these URLs to your specific project folder on static.jboss.org -->
+    <!--
+      <style>
+        @media (min-width: 980px) {
+          .banner { background-image: url(http://static.jboss.org/images/tools/tools-banner-1180px.png); height: 110px;  }
+        }
+        @media (max-width: 979px) {
+          .banner { background-image: url(http://static.jboss.org/images/tools/tools-logo.png); background-repeat:no-repeat; height: 60px; }
+        }
+        @media (max-width: 650px) {
+          .banner { width: 200px; margin: 0px auto; }
+        }
+      </style>
+    -->
+    <style>
+      .banner { background-image: url(http://static.jboss.org/images/tools/tools-banner-1180px.png); height: 110px;  }
+    </style>
+    <script src="http://static.jboss.org/theme/js/libs/jquery/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <!-- begin accessibility skip to top -->
+    <ul class="visuallyhidden" id="top">
+      <li>
+        <a accesskey="n" href="#nav" title="Skip to navigation">Skip to navigation</a>
+      </li>
+      <li>
+        <a accesskey="c" href="#page" title="Skip to content">Skip to content</a>
+      </li>
+    </ul>
+    <div class="container" id="content">
+      <div class="dropup">
+        <a class="tabnav-closed" href="https://www.jboss.org" id="tab">Red Hat</a>
+        <script>
+          window.addEventListener('load', function() { renderTabzilla("JBoss Tools","tools") }, false);
+        </script>
+      </div>
+      <div class="banner">
+        <a href="#"></a>
+      </div>
+      <div class="navbar navbar-inverse" id="navbar-fix">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li id="home"><a href="http://jbosstools.github.com/jbosstools-website/">Home</a></li>
+                <li id="downloads"><a href="http://jbosstools.github.com/jbosstools-website/downloads/">Downloads</a></li>
+                <li class="dropdown" id="docs"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Docs <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://jbosstools.github.com/jbosstools-website/features">Features</a></li>
+                  <li><a href="http://jbosstools.github.com/jbosstools-website/whatsnew">What's New</a></li>
+                  <li><a href="http://jbosstools.github.com/jbosstools-website/videos">Video Tutorials</a></li>
+                  <li><a href="http://docs.jboss.org/tools/4.1.0.Final/">Reference Guides</a></li>
+                </ul></li>
+                <li class="dropdown" id="community">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Community <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://jbosstools.github.com/jbosstools-website/contribute.html">Contribute</a></li>
+                    <li><a href="http://www.jboss.org/community/docs/DOC-10794">Wiki</a></li>
+                    <li><a href="http://community.jboss.org/community/tools?view=discussions">User Forum</a></li>
+                    <li><a href="https://lists.jboss.org/mailman/listinfo/jbosstools-dev">Mailing Lists</a></li>
+                    <li><a href="irc://irc.freenode.org/jbosstools">Chat</a></li>
+                    <li id="blog"><a href="http://jbosstools.github.com/jbosstools-website/blog">Blog</a></li>
+                  </ul>
+                </li>
+                <li id="issuetracker"><a href="https://issues.jboss.org/browse/JBIDE">Issues</a></li>
+                <li id="sourcecode"><a href="https://github.com/jbosstools">Source Code</a></li>
+                <li id="build"><a href="http://hudson.jboss.org/hudson/view/JBossTools/view/JBossTools_Trunk/">Build</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Follow Us <b class="caret"></b></a>
+                  <ul class="dropdown-menu projectsocialmedia">
+                    <li><a href="http://twitter.com/jbosstools"><img src="http://static.jboss.org/theme/images/common/socialmedia_icon40_twitter.png"></a></li>
+                    <li><a href="https://plus.google.com/109915195368578219327"><img src="http://static.jboss.org/theme/images/common/socialmedia_icon40_googleplus.png"></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- activate the tab by adding the 'active' class -->
+      <script>
+        document.getElementById("community").className += " active";
+      </script>
+      <div id="content-wrapper">
+        <div class='breadcrumb'><a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/index.html'
+                >Home</a> / <a class='breadcrumb_anchor ' href='http://jbosstools.github.com/jbosstools-website/blog/index.html'
+                >Blog</a> / <a class='breadcrumb_anchor active' href='http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html'
+                >Web resource optimization and Maven Profiles</a></div>
+        <div class="row-fluid">
+          <div class="span12" id="core-page">
+            <div class="post">
+              <div class="title-wrapper">
+                <img class="img-polaroid" src="https://community.jboss.org/people/fbricon/avatar/64.png">
+                <div class="title border">
+                  <h3>
+                    <span>
+                      Web resource optimization and Maven Profiles
+                    </span>
+                    <a href="news.atom">
+                      <img id="rss-icon" src="http://jbosstools.github.com/jbosstools-website/images/feed-icon-28x28.png">
+                    </a>
+                  </h3>
+                  <div class="author">
+                    <!-- there is only one author per post but the author splitter adds an array here -->
+                    posted by
+                    <strong>Fred Bricon</strong>
+                    on
+                    <strong>Jan 02, 2014.</strong>
+                    <p>
+                      <a class="label label-info" href="tags/jbosstools">jbosstools</a>
+                      <a class="label label-info" href="tags/jbds">jbds</a>
+                      <a class="label label-info" href="tags/maven">maven</a>
+                      <a class="label label-info" href="tags/optimization">optimization</a>
+                      <a class="label label-info" href="tags/wro4j">wro4j</a>
+                      <span class="comments">
+                        <i class="icon-comments"></i>
+                         <a href="http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html#disqus_thread">Comments</a>
+                        
+                                    <script type="text/javascript">
+                                    var disqus_shortname = 'jbosstools-preview';
+                                    (function () {
+                                      var s = document.createElement('script'); s.async = true;
+                                      s.src = "http://disqus.com/forums/jbosstools-preview/count.js";
+                                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                                    }());
+                                    </script>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="body">
+                <div id="preamble">
+                <div class="sectionbody">
+                <div class="paragraph">
+                <p>Some time ago, I described how to perform <a href="https://community.jboss.org/en/tools/blog/2012/01/17/css-and-js-minification-using-eclipse-maven-and-wro4j">CSS and JS minification using Eclipse, Maven</a> and <a href="http://code.google.com/p/wro4j/">WRO4J</a>, thanks to <a href="https://github.com/jbosstools/m2e-wro4j">m2e-wro4j</a>.</p>
+                </div>
+                <div class="paragraph">
+                <p>In this article, we&#8217;ll deploy a Java EE 6 Restful application with an HTML5 front-end on a Wildfly application server. We&#8217;ll see how, using m2e-wro4j, m2e-wtp and the JBoss Tools Maven Profile Management UI, you can easily switch between minified and regular build profiles.</p>
+                </div>
+                </div>
+                </div>
+                <div class="sect1">
+                <h2 id="_setup_your_eclipse_based_ide">Setup your Eclipse-based IDE</h2>
+                <div class="sectionbody">
+                <div class="paragraph">
+                <p>First you&#8217;ll need to install a couple things into an Eclipse Java EE installation. I recommend you use Red Hat JBoss Developer Studio, as it comes with m2e, m2e-wtp, the Maven Profile Manager, the Wildfly server adapter and JBoss Central out-of-the-box, but any Eclipse based installation (Kepler) will do, provided you install the proper plugins.</p>
+                </div>
+                <table class="tableblock frame-all grid-all" style="width:100%; ">
+                <colgroup>
+                <col style="width:%;">
+                <col style="width:%;"> 
+                </colgroup>
+                <thead>
+                <tr>
+                <th class="tableblock halign-left valign-top">Red Hat JBoss Developer Studio</th>
+                <th class="tableblock halign-left valign-top">Eclipse Java EE</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td class="tableblock halign-left valign-top"><div><div class="ulist">
+                <ul>
+                <li>
+                <p>You can download and install Red Hat JBoss Developer Studio 7.1.0 from <a href="https://devstudio.jboss.com/earlyaccess/">here</a></p>
+                </li>
+                <li>
+                <p>or install it over an existing Eclipse (Kepler) installation from the <a href="https://marketplace.eclipse.org/content/red-hat-jboss-developer-studio-kepler">Eclipse Marketplace</a></p>
+                </li>
+                </ul>
+                </div></div></td>
+                <td class="tableblock halign-left valign-top"><div><div class="ulist">
+                <ul>
+                <li>
+                <p>Download and install <a href="https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr1">Eclipse Java EE Kepler SR1</a></p>
+                </li>
+                <li>
+                <p>JBoss Tools 4.1.1 can be installed from</p>
+                <div class="ulist">
+                <ul>
+                <li>
+                <p><a href="https://marketplace.eclipse.org/content/jboss-tools-kepler">the Eclipse Marketplace</a></p>
+                </li>
+                <li>
+                <p>or this p2 repository : <a href="http://download.jboss.org/jbosstools/updates/stable/kepler/">http://download.jboss.org/jbosstools/updates/stable/kepler/</a></p>
+                </li>
+                </ul>
+                </div>
+                </li>
+                </ul>
+                </div>
+                <div class="paragraph">
+                <p>Make sure you install the following JBoss Tools features :</p>
+                </div>
+                <div class="ulist">
+                <ul>
+                <li>
+                <p>Maven Profiles Management</p>
+                </li>
+                <li>
+                <p>JBossAS Server</p>
+                </li>
+                <li>
+                <p>JBoss Central</p>
+                </li>
+                </ul>
+                </div></div></td>
+                </tr>
+                </tbody>
+                </table>
+                
+                <div class="paragraph">
+                <p>m2e-wro4j can then be installed from JBoss Central&#8217;s <em>Software/Update</em> tab :</p>
+                </div>
+                <div class="imageblock">
+                <div class="content">
+                <img src="./images/m2e-wro4j-installation.png" alt="m2e wro4j installation">
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>Alternatively, you can find and install m2e-wro4j from the <a href="https://marketplace.eclipse.org/content/m2e-wro4j">Eclipse Marketplace</a> too.</p>
+                </div>
+                <div class="paragraph">
+                <p>Also make sure you have a <a href="http://wildfly.org/downloads/">Wildfly</a> server installed on your machine.</p>
+                </div>
+                </div>
+                </div>
+                <div class="sect1">
+                <h2 id="_about_m2e_wro4j">About m2e-wro4j</h2>
+                <div class="sectionbody">
+                <div class="paragraph">
+                <p>The m2e-wro4j connector allows wro4j-maven-plugin to be invoked when .js, .css, .coffee, .less, .sass, .scss, .json, .template or pom.xml files are modified.</p>
+                </div>
+                <div class="paragraph">
+                <p>Given the following configuration :</p>
+                </div>
+                <div class="listingblock">
+                <div class="content">
+                <pre class="highlight"><code class="xml language-xml">&lt;plugin&gt;&#x000A;    &lt;groupId&gt;ro.isdc.wro4j&lt;/groupId&gt;&#x000A;    &lt;artifactId&gt;wro4j-maven-plugin&lt;/artifactId&gt;&#x000A;    &lt;version&gt;${version.ro.isdc.wro4j}&lt;/version&gt;&#x000A;    &lt;executions&gt;&#x000A;        &lt;execution&gt;&#x000A;            &lt;phase&gt;compile&lt;/phase&gt;&#x000A;            &lt;goals&gt;&#x000A;                &lt;goal&gt;run&lt;/goal&gt;&#x000A;            &lt;/goals&gt;&#x000A;        &lt;/execution&gt;&#x000A;    &lt;/executions&gt;&#x000A;    &lt;configuration&gt;&#x000A;        &lt;targetGroups&gt;app.min,m.screen.min,d.screen.min&lt;/targetGroups&gt;&#x000A;        &lt;cssDestinationFolder&gt;${project.build.directory}/${project.build.finalName}/css/&lt;/cssDestinationFolder&gt;&#x000A;        &lt;jsDestinationFolder&gt;${project.build.directory}/${project.build.finalName}/js/&lt;/jsDestinationFolder&gt;&#x000A;        &lt;wroManagerFactory&gt;ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory&lt;/wroManagerFactory&gt;&#x000A;    &lt;/configuration&gt;&#x000A;&lt;/plugin&gt;</code></pre>
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>When m2e-wtp is present, m2e-wro4j automatically translates ${project.build.directory}/${project.build.finalName}/* output directories (the default values used by wro4j-maven-plugin) to ${project.build.directory}/m2e-wtp/web-resources/. This gives you on-the-fly redeployment of optimized resources on WTP controlled servers.</p>
+                </div>
+                <div class="admonitionblock note">
+                <table>
+                <tr>
+                <td class="icon">
+                <i class="icon-note" title="Note"></i>
+                </td>
+                <td class="content">
+                <div class="paragraph">
+                <p>In order to use wro4j-maven-plugin, you need a wro.xxx descriptor (that would be src/main/webapp/WEB-INF/wro.xml by default) and a wro.properties. Read <a href="https://code.google.com/p/wro4j/wiki/MavenPlugin">https://code.google.com/p/wro4j/wiki/MavenPlugin</a> for more details.</p>
+                </div>
+                </td>
+                </tr>
+                </table>
+                </div>
+                </div>
+                </div>
+                <div class="sect1">
+                <h2 id="_create_an_html_5_project">Create an HTML 5 project</h2>
+                <div class="sectionbody">
+                <div class="paragraph">
+                <p>Now let&#8217;s get to work. From the JBoss Central <em>Getting Started</em> tab, click on the HTML 5 project icon to create a Maven based web application with a JAX-RS back-end and an HTML 5 front-end.</p>
+                </div>
+                <div class="imageblock">
+                <div class="content">
+                <img src="./images/html5-project-jboss-central.png" alt="html5 project jboss central">
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>I used <strong>kitchensink</strong> as a project name.</p>
+                </div>
+                <div class="paragraph">
+                <p>This project already has some wro4j-maven-plugin configuration we can use. All we need is to make the switch between regular and minify versions of the build more user friendly.</p>
+                </div>
+                </div>
+                </div>
+                <div class="sect1">
+                <h2 id="_enable_minification">Enable minification</h2>
+                <div class="sectionbody">
+                <div class="paragraph">
+                <p>First, we need to remove one xml snippet from the pom.xml which prevents wro4j-maven-plugin from running during Eclipse builds, thus cancelling m2e-wro4j&#8217;s efforts. Go to the <em>minify</em> profile and delete :</p>
+                </div>
+                <div class="listingblock">
+                <div class="content">
+                <pre class="highlight"><code class="xml language-xml">&lt;pluginManagement&gt;&#x000A;    &lt;plugins&gt;&#x000A;        &lt;!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.--&gt;&#x000A;        &lt;plugin&gt;&#x000A;            &lt;groupId&gt;org.eclipse.m2e&lt;/groupId&gt;&#x000A;            &lt;artifactId&gt;lifecycle-mapping&lt;/artifactId&gt;&#x000A;            &lt;version&gt;${version.org.eclipse.m2e}&lt;/version&gt;&#x000A;            &lt;configuration&gt;&#x000A;                &lt;lifecycleMappingMetadata&gt;&#x000A;                    &lt;pluginExecutions&gt;&#x000A;                        &lt;pluginExecution&gt;&#x000A;                            &lt;pluginExecutionFilter&gt;&#x000A;                                &lt;groupId&gt;ro.isdc.wro4j&lt;/groupId&gt;&#x000A;                                &lt;artifactId&gt;&#x000A;                                    wro4j-maven-plugin&#x000A;                                &lt;/artifactId&gt;&#x000A;                                &lt;version&gt;${version.ro.isdc.wro4j}&lt;/version&gt;&#x000A;                                &lt;goals&gt;&#x000A;                                    &lt;goal&gt;run&lt;/goal&gt;&#x000A;                                &lt;/goals&gt;&#x000A;                            &lt;/pluginExecutionFilter&gt;&#x000A;                            &lt;action&gt;&#x000A;                                &lt;ignore&gt;&lt;/ignore&gt;&#x000A;                            &lt;/action&gt;&#x000A;                        &lt;/pluginExecution&gt;&#x000A;                    &lt;/pluginExecutions&gt;&#x000A;                &lt;/lifecycleMappingMetadata&gt;&#x000A;            &lt;/configuration&gt;&#x000A;        &lt;/plugin&gt;&#x000A;    &lt;/plugins&gt;&#x000A;&lt;/pluginManagement&gt;&#x000A;</code></pre>
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>In order to use the minified versions of javascript and css files in the app, the original index.html file requires you to (un)comment several lines like :</p>
+                </div>
+                <div class="listingblock">
+                <div class="content">
+                <pre class="highlight"><code class="javascript language-javascript">yep: {&#x000A;    //assign labeled callbacks for later execution after script loads.&#x000A;    //we are on mobile device so load appropriate CSS&#x000A;    "jqmcss": "css/jquery.mobile-1.3.1.min.css",&#x000A;    // For minification, uncomment this line&#x000A;    //"mcss": "css/m.screen.min.css"&#x000A;    // For minification, comment out this line&#x000A;    "mcss": "css/m.screen.css"&#x000A;},&#x000A;nope: {&#x000A;    //we are on desktop&#x000A;    // For minification, uncomment this line&#x000A;    //"scss": "css/d.screen.min.css"&#x000A;    // For minification, comment out this line&#x000A;    "scss": "css/d.screen.css"&#x000A;},</code></pre>
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>This is clearly not practical if you want to be able to quickly switch between minified and original versions of your files.</p>
+                </div>
+                <div class="paragraph">
+                <p>Fortunately, we can take advantage of some Maven black magic, also known as <a href="http://maven.apache.org/plugins/maven-war-plugin/examples/adding-filtering-webresources.html">web resource filtering</a>, to dynamically use the proper (non-minified) version of these files, depending on the profile we&#8217;re building with.</p>
+                </div>
+                <div class="paragraph">
+                <p>We have 3 things to do :</p>
+                </div>
+                <div class="olist arabic">
+                <ol class="arabic">
+                <li>
+                <p>define a maven property for the minified file extension currently in use</p>
+                </li>
+                <li>
+                <p>enable web resource filtering in the maven-war-plugin configuration</p>
+                </li>
+                <li>
+                <p>modify index.html so it uses the aforementioned maven property</p>
+                </li>
+                </ol>
+                </div>
+                <div class="sect3">
+                <h4 id="_setup_the_maven_property">Setup the maven property</h4>
+                <div class="paragraph">
+                <p>In the main <em>&lt;properties&gt;</em> block, at the top of your pom.xml, add the following property :</p>
+                </div>
+                <div class="listingblock">
+                <div class="content">
+                <pre class="highlight"><code class="xml language-xml">&lt;!-- By default, the original filename will be used --&gt;&#x000A;&lt;min.ext&gt;&lt;/min.ext&gt;</code></pre>
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>Now add a <em>&lt;properties&gt;</em> block to the <em>minify</em> profile :</p>
+                </div>
+                <div class="listingblock">
+                <div class="content">
+                <pre class="highlight"><code class="xml language-xml">&lt;properties&gt;&#x000A;  &lt;min.ext&gt;.min&lt;/min.ext&gt;&#x000A;&lt;/properties&gt;&#x000A;</code></pre>
+                </div>
+                </div>
+                </div>
+                <div class="sect3">
+                <h4 id="_enable_web_resource_filtering">Enable web resource filtering</h4>
+                <div class="paragraph">
+                <p>Modify the default maven-war-plugin configuration to enable filtering on html files :</p>
+                </div>
+                <div class="listingblock">
+                <div class="content">
+                <pre class="highlight"><code class="xml language-xml">&lt;plugin&gt;&#x000A;  &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;&#x000A;  &lt;version&gt;${version.war.plugin}&lt;/version&gt;&#x000A;  &lt;configuration&gt;&#x000A;    &lt;!-- Java EE 6 doesn't require web.xml, Maven needs to catch up! --&gt;&#x000A;    &lt;failOnMissingWebXml&gt;false&lt;/failOnMissingWebXml&gt;&#x000A;    &lt;webResources&gt;&#x000A;      &lt;webResource&gt;&#x000A;        &lt;directory&gt;src/main/webapp&lt;/directory&gt;&#x000A;        &lt;filtering&gt;true&lt;/filtering&gt;&#x000A;        &lt;includes&gt;&lt;include&gt;*.html&lt;/include&gt;&lt;/includes&gt;&#x000A;      &lt;/webResource&gt;&#x000A;    &lt;/webResources&gt;&#x000A;  &lt;/configuration&gt;&#x000A;&lt;/plugin&gt;</code></pre>
+                </div>
+                </div>
+                </div>
+                <div class="sect3">
+                <h4 id="_use_the_maven_property">Use the maven property</h4>
+                <div class="paragraph">
+                <p>In <strong>index.html</strong>, replace at least the following occurrences :</p>
+                </div>
+                <table class="tableblock frame-all grid-all" style="width:30%; ">
+                <colgroup>
+                <col style="width:50%;">
+                <col style="width:50%;"> 
+                </colgroup>
+                <thead>
+                <tr>
+                <th class="tableblock halign-left valign-top">from</th>
+                <th class="tableblock halign-left valign-top">to</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td class="tableblock halign-left valign-top"><p class="tableblock">js/app.js</p></td>
+                <td class="tableblock halign-left valign-top"><p class="tableblock">js/app${min.ext}.js</p></td>
+                </tr>
+                <tr>
+                <td class="tableblock halign-left valign-top"><p class="tableblock">css/m.screen.css</p></td>
+                <td class="tableblock halign-left valign-top"><p class="tableblock">css/m.screen{min.ext}.css</p></td>
+                </tr>
+                <tr>
+                <td class="tableblock halign-left valign-top"><p class="tableblock">css/d.screen.css</p></td>
+                <td class="tableblock halign-left valign-top"><p class="tableblock">css/d.screen{min.ext}.css</p></td>
+                </tr>
+                </tbody>
+                </table>
+                
+                <div class="paragraph">
+                <p>You can also apply similar changes to <em>lodash</em> and <em>jquery</em> if you want.</p>
+                </div>
+                <div class="paragraph">
+                <p>At this point, you should see the filtered <em>target/m2e-wtp/web-resources/index.html</em> references the original resources, as the minified extension enabled by default is an empty string.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="sect1">
+                <h2 id="_switch_between_minified_and_regular_profiles">Switch between minified and regular profiles</h2>
+                <div class="sectionbody">
+                <div class="paragraph">
+                <p>Let&#8217;s see what happens when enabling the <em>minify</em> profile. <strong>Ctrl+Alt+P</strong> is a shortcut bringing up the Maven Profile Management UI. Just check/uncheck profiles to enable/disable them :</p>
+                </div>
+                <div class="imageblock">
+                <div class="content">
+                <img src="./images/profile-selection.png" alt="profile selection">
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>Once the <em>minify</em> profile is active, you&#8217;ll see that :</p>
+                </div>
+                <div class="ulist">
+                <ul>
+                <li>
+                <p><em>css/m.screen.min.css</em>, <em>css/d.screen.min.css</em>,<em>js/app.min.js</em> are generated under target/m2e-wtp/web-resources/</p>
+                </li>
+                <li>
+                <p><em>target/m2e-wtp/web-resources/index.html</em> now references the minified versions of the resources</p>
+                </li>
+                </ul>
+                </div>
+                <div class="imageblock">
+                <div class="content">
+                <img src="./images/minified-resources.png" alt="minified resources">
+                </div>
+                </div>
+                <div class="sect3">
+                <h4 id="_deploy_the_application_on_wildfly">Deploy the application on WildFly</h4>
+                <div class="ulist">
+                <ul>
+                <li>
+                <p>Right click on your project and select <strong>Run As &gt; Run on Server &#8230;</strong></p>
+                </li>
+                <li>
+                <p>Create a new Wildfly Server if necessary, pointing at your locally installed server</p>
+                </li>
+                <li>
+                <p>Once the server is created and deployed, a browser window should open :</p>
+                </li>
+                </ul>
+                </div>
+                <div class="imageblock">
+                <div class="content">
+                <img src="./images/deployed-application1.png" alt="deployed application1">
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>If you&#8217;re on a desktop, modify the color of the h1 class in <em>src/main/webapp/css/d.screen.css</em> and save. This will trigger <strong>wro4j-maven-plugin:run</strong> which will regenerate the minified version under target/m2e-wtp/web-resources/css/d.screen.min.css, which in turn will be deployed on Wildfly by the server adapter.</p>
+                </div>
+                <div class="paragraph">
+                <p>Reloading the page will show the changes directly :</p>
+                </div>
+                <div class="imageblock">
+                <div class="content">
+                <img src="./images/deployed-application2.png" alt="deployed application2">
+                </div>
+                </div>
+                <div class="paragraph">
+                <p>Now you can switch back to using the regular, non-minified version by hitting Ctrl+Alt+P in the workbench, unselect the <em>minify</em> profile and wait for the build to complete.
+                After you rreload your browser page, you&#8217;ll notice, if you look at the source page, the minified versions are not referenced anymore.</p>
+                </div>
+                <div class="admonitionblock note">
+                <table>
+                <tr>
+                <td class="icon">
+                <i class="icon-note" title="Note"></i>
+                </td>
+                <td class="content">
+                <div class="paragraph">
+                <p>The minified files still exist under <em>target/m2e-wtp/web-resources/</em> and are deployed as such. They&#8217;re unused, so they&#8217;re harmless, but you&#8217;d need to perform a clean build to remove them if necessary.</p>
+                </div>
+                </td>
+                </tr>
+                </table>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="sect1">
+                <h2 id="_your_feedback_is_important">Your feedback is important</h2>
+                <div class="sectionbody">
+                <div class="paragraph">
+                <p>Issues with m2e-wro4j can be opened at <a href="https://github.com/jbosstools/m2e-wro4j/issues">https://github.com/jbosstools/m2e-wro4j/issues</a>.</p>
+                </div>
+                <div class="paragraph">
+                <p>Issues wwith the Maven Profile Manager can be opened at <a href="https://issues.jboss.org/browse/JBIDE/component/12312576">https://issues.jboss.org/browse/JBIDE/component/12312576</a></p>
+                </div>
+                <div class="paragraph">
+                <p>As always, for all your WRO4J or wro4j-maven-plugin specific issues, I strongly encourage you to :</p>
+                </div>
+                <div class="ulist">
+                <ul>
+                <li>
+                <p>read the WRO4J getting started page and the <a href="https://code.google.com/p/wro4j/wiki/MavenPlugin">Maven plugin documentation</a></p>
+                </li>
+                <li>
+                <p>ask the <a href="http://groups.google.com/group/wro4j">google group</a> directly</p>
+                </li>
+                </ul>
+                </div>
+                <div class="paragraph">
+                <p>Have fun!</p>
+                </div>
+                <div class="paragraph">
+                <p>Fred Bricon<br>
+                <a href="https://twitter.com/fbricon">https://twitter.com/fbricon</a></p>
+                </div>
+                </div>
+                </div>
+              </div>
+              <div class="navigation">
+                <hr>
+                <div class="row-fluid">
+                  <div class="span4 previous">
+                    <a class="btn btn-primary btn-small" href="2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html">&laquo; JBoss Tools 4.1 and Red Hat JBoss Developer Studio 7 go GA</a>
+                  </div>
+                  <div class="span4 center">
+                    <a class="btn btn-primary btn-small" href=".">See all articles</a>
+                  </div>
+                  <div class="span4 next">
+                  </div>
+                </div>
+              </div>
+              <div class="comments">
+                
+                            <div id="disqus_thread"></div>
+                            <script type="text/javascript">
+                            var disqus_shortname = 'jbosstools-preview';
+                            var disqus_url = "http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html";
+                            var disqus_developer = null;
+                            var disqus_identifier = null;
+                            (function() {
+                              var dsq = document.createElement("script"); dsq.type = "text/javascript"; dsq.async = true;
+                              dsq.src = "http://jbosstools-preview.disqus.com/embed.js";
+                              (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);
+                            })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=jbosstools-preview">comments powered by Disqus.</a></noscript>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="row-fluid">
+        <div class="span2 offset1">
+          <h4>Navigate</h4>
+          <ul>
+            <li>
+              <a href="http://jbosstools.github.com/jbosstools-website" title="Overview">Overview</a>
+            </li>
+            <li>
+              <a href="http://jbosstools.github.com/jbosstools-website/downloads" title="Downloads">Downloads</a>
+            </li>
+            <li>
+              <a href="http://jbosstools.github.com/jbosstools-website/usage" title="Usage">Usage</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span2">
+          <h4>Follow Us</h4>
+          <ul>
+            <li>
+              <a href="http://jbosstools.github.com/jbosstools-website/blog" title="Blog">Blog</a>
+            </li>
+            <li>
+              <a href="http://twitter.com/jbosstools" title="Twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/109915195368578219327" title="Google+">Google+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span2">
+          <h4>Contribute</h4>
+          <ul>
+            <li>
+              <a href="https://issues.jboss.org/browse/JBIDE" title="Submit a bug">Submit a bug</a>
+            </li>
+            <li>
+              <a href="https://github.com/jbosstools" title="Write code">Write Code</a>
+            </li>
+            <li>
+              <a href="http://community.jboss.org/community/tools?view=discussions" title="Ask questions on the forum">Ask questions on the forum</a>
+            </li>
+            <li>
+              <a href="irc://irc.freenode.org/jbosstools" title="Talk on IRC">Talk with us on IRC</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span3 offset1">
+          <h4>Licenses</h4>
+          <p>All plugins are available under the Eclipse Public License (EPL).</p>
+          <p>They may also contain some libraries licensed under certain open source licenses such as EPL, LGPL, and/or certain other open source licenses.</p>
+          <p></p>
+          <div class="jbossbadge">
+            <a href="http://www.jboss.org/">
+              <img src="http://static.jboss.org/theme/images/common/jbossbadge.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container" id="companyfooter">
+      <div class="redhatlogo">
+        <div id="logospacer"></div>
+        <a href="http://www.redhat.com/"><img src="http://static.jboss.org/theme/images/common/redhat_logo.png"></a>
+      </div>
+    </div>
+    <span class="backToTop">
+      <a href="#top">back to top</a>
+    </span>
+    <script src="http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.3/bootstrap-community.min.js"></script>
+    <!-- begin eloqua tracking -->
+    <script type='text/javascript' language='JavaScript' src='http://www.redhat.com/j/elqNow/elqCfg.js'></script>
+    <script type='text/javascript' language='JavaScript' src='http://www.redhat.com/j/elqNow/elqImg.js'></script>
+    <!-- end eloqua tracking -->
+    
+    <div id="oTags">
+      <script type="text/javascript" src="//www.stage.redhat.com/j/s_code.js"></script>
+      <script type="text/javascript"><!--
+      var coreUrl = encodeURI(document.URL.split("?")[0]).replace(/-/g," ");
+      var urlSplit = coreUrl.toLowerCase().split(/\//);
+      var urlLast = urlSplit[urlSplit.length-1];
+      var pageNameString = "";
+      var siteName = "";
+      var minorSectionIndex = 3
+      if (urlLast == "") {
+          urlSplit.splice(-1,1);
+      }
+      if (urlLast.search(/\./) >= 0) {
+          if (urlLast == "index.html") {
+              urlSplit.splice(-1,1);
+          }
+          else {
+              urlSplit[urlSplit.length-1] = urlLast.split(".").splice(0,1);
+          }
+      }
+      siteName = urlSplit[2].split(".")[1];
+      s.prop14 = s.eVar27 = siteName || "";
+      s.prop15 = s.eVar28 = urlSplit[minorSectionIndex] || "";
+      s.prop16 = s.eVar29 = urlSplit[minorSectionIndex+1] || "";
+      pageNameString = urlSplit.splice(3).join(" | ");
+      s.pageName = "jboss | community | " + siteName + " | " + pageNameString;
+      s.server = "jboss";
+      s.channel = "jboss | community";
+      s.prop4 = s.eVar23 = encodeURI(document.URL);
+      s.prop21 = s.eVar18 = coreUrl;
+      s.prop2 = s.eVar22 = "en";
+      s.prop3 = s.eVar19 = "us";
+      //--></script>
+      <script type="text/javascript" src="//www.stage.redhat.com/j/rh_omni_footer.js"></script>
+      <script language="JavaScript" type="text/javascript"><!--
+      if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+      //--></script>
+      <noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+      src="https://smtrcs.redhat.com/b/ss/redhatcom,redhatglobal/1/H.25.4--NS/0?[AQB]&cdp=3&[AQE]"
+      height="1" width="1" border="0" alt="" /></a></noscript>
+    </div>
+    <!-- End oTags -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount','UA-46704212-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  </body>
+</html>

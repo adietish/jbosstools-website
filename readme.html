@@ -63,7 +63,7 @@ If you are not going to use RVM have a look at the different installations <a hr
 <div class="content">
 <pre class="highlight"><code>rvm install 1.9.3
 rvm use 1.9.3
-rvm gemset create jbosstools</code></pre>
+rvm gemset create jbosstools-website</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -123,12 +123,15 @@ management, you need to rerun <code>bundle install</code>.</p>
 <p>Run  <code>rake preview</code></p>
 </li>
 <li>
+<p>Wait for a message like <code>[2014-01-06 11:48:01] INFO  WEBrick::HTTPServer#start: pid=24294 port=4242</code> to appear in the console (can take a few tens of seconds)</p>
+</li>
+<li>
 <p>Open your browser to <a href="http://localhost:4242">http://localhost:4242</a></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Any change will be automatically picked up except for changes to <code>_partials</code> files.</p>
+<p>Any change will be automatically picked up except for changes to <code>_partials</code> files and changes in front-matters.</p>
 </div>
 <div class="admonitionblock note">
 <table>
