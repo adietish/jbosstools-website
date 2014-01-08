@@ -2,13 +2,13 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://jbosstools.github.com/jbosstools-website/</id>
   <title>JBoss Tools</title>
-  <updated>2014-01-08T10:28:32+00:00</updated>
+  <updated>2014-01-08T10:31:24+00:00</updated>
   <link href="http://jbosstools.github.com/jbosstools-website/blog/news.atom" rel="self" type="application/atom+xml" />
   <link href="http://jbosstools.github.com/jbosstools-website/" rel="alternate" type="text/html" />
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html</id>
     <title>Web resource optimization and Maven Profiles</title>
-    <updated>2014-01-08T10:28:32+00:00</updated>
+    <updated>2014-01-08T10:31:24+00:00</updated>
     <published>2014-01-02T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html" rel="alternate" type="text/html" />
     <author>
@@ -162,7 +162,7 @@
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;When m2e-wtp is present, m2e-wro4j automatically translates ${project.build.directory}/${project.build.finalName}/* output directories (the default values used by wro4j-maven-plugin) to &lt;em&gt;${project.build.directory}/m2e-wtp/web-resources/&lt;/em&gt;. This gives you on-the-fly redeployment of optimized resources on WTP controlled servers.&lt;/p&gt;
+      &lt;p&gt;When &lt;em&gt;m2e-wtp&lt;/em&gt; is present, &lt;em&gt;m2e-wro4j&lt;/em&gt; automatically translates &lt;em&gt;${project.build.directory}/${project.build.finalName}/*&lt;/em&gt; output directories (the default values used by &lt;em&gt;wro4j-maven-plugin&lt;/em&gt;) to &lt;em&gt;${project.build.directory}/m2e-wtp/web-resources/&lt;/em&gt;. This gives you on-the-fly redeployment of optimized resources on WTP controlled servers.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;admonitionblock note&quot;&gt;
       &lt;table&gt;&lt;tr&gt;
@@ -485,7 +485,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html</id>
     <title>JBoss Tools 4.1 and Red Hat JBoss Developer Studio 7 go GA</title>
-    <updated>2014-01-08T10:28:32+00:00</updated>
+    <updated>2014-01-08T10:31:24+00:00</updated>
     <published>2013-07-23T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html" rel="alternate" type="text/html" />
     <author>
@@ -1086,7 +1086,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html</id>
     <title>show-domain-info: openshift-java-client in a nutshell</title>
-    <updated>2014-01-08T10:28:32+00:00</updated>
+    <updated>2014-01-08T10:31:24+00:00</updated>
     <published>2012-08-24T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html" rel="alternate" type="text/html" />
     <author>
