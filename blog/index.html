@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <meta content="Tue, 07 Jan 2014 11:30:00 UTC" http-equiv="Last-Modified">
+    <meta content="Wed, 08 Jan 2014 10:30:49 UTC" http-equiv="Last-Modified">
     <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
     <!-- IE 6-8 support of HTML 5 elements -->
     <!--[if lt IE 9]>
@@ -254,7 +254,7 @@
                 </div>
                 </div>
                 <div class="paragraph">
-                <p>When m2e-wtp is present, m2e-wro4j automatically translates ${project.build.directory}/${project.build.finalName}/* output directories (the default values used by wro4j-maven-plugin) to ${project.build.directory}/m2e-wtp/web-resources/. This gives you on-the-fly redeployment of optimized resources on WTP controlled servers.</p>
+                <p>When m2e-wtp is present, m2e-wro4j automatically translates ${project.build.directory}/${project.build.finalName}/* output directories (the default values used by wro4j-maven-plugin) to <em>${project.build.directory}/m2e-wtp/web-resources/</em>. This gives you on-the-fly redeployment of optimized resources on WTP controlled servers.</p>
                 </div>
                 <div class="admonitionblock note">
                 <table>
@@ -287,7 +287,7 @@
                 <p>I used <strong>kitchensink</strong> as a project name.</p>
                 </div>
                 <div class="paragraph">
-                <p>This project already has some wro4j-maven-plugin configuration we can use. All we need is to make the switch between regular and minify versions of the build more user friendly.</p>
+                <p>This project already has some <em>wro4j-maven-plugin</em> configuration we can use. All we need is to make the switch between regular and minified versions of the build more user friendly.</p>
                 </div>
                 </div>
                 </div>
@@ -295,7 +295,7 @@
                 <h2 id="_enable_minification">Enable minification</h2>
                 <div class="sectionbody">
                 <div class="paragraph">
-                <p>First, we need to remove one xml snippet from the pom.xml which prevents wro4j-maven-plugin from running during Eclipse builds, thus cancelling m2e-wro4j&#8217;s efforts. Go to the <em>minify</em> profile and delete :</p>
+                <p>First, we need to remove one xml snippet from the pom.xml which prevents <em>wro4j-maven-plugin</em> from running during Eclipse builds, thus cancelling m2e-wro4j&#8217;s efforts. Go to the <em>minify</em> profile and delete :</p>
                 </div>
                 <div class="listingblock">
                 <div class="content">
@@ -453,10 +453,10 @@
                 </div>
                 </div>
                 <div class="paragraph">
-                <p>If you&#8217;re on a desktop, modify the color of the h1 class in <em>src/main/webapp/css/d.screen.css</em> and save. This will trigger <strong>wro4j-maven-plugin:run</strong> which will regenerate the minified version under target/m2e-wtp/web-resources/css/d.screen.min.css, which in turn will be deployed on Wildfly by the server adapter.</p>
+                <p>If you&#8217;re on a desktop, modify the color of the <strong>h1</strong> class in <em>src/main/webapp/css/d.screen.css</em> and save. This will trigger <strong>wro4j-maven-plugin:run</strong> which will regenerate the minified version under <em>target/m2e-wtp/web-resources/css/d.screen.min.css</em>, which in turn will be deployed on Wildfly by the server adapter.</p>
                 </div>
                 <div class="paragraph">
-                <p>Reloading the page will show the changes directly :</p>
+                <p>Reloading the page (after the build is complete) will show the changes directly :</p>
                 </div>
                 <div class="imageblock">
                 <div class="content">
@@ -464,8 +464,8 @@
                 </div>
                 </div>
                 <div class="paragraph">
-                <p>Now you can switch back to using the regular, non-minified version by hitting Ctrl+Alt+P in the workbench, unselect the <em>minify</em> profile and wait for the build to complete.
-                After you rreload your browser page, you&#8217;ll notice, if you look at the source page, the minified versions are not referenced anymore.</p>
+                <p>Now you can switch back to using the regular, non-minified version by hitting <strong>Ctrl+Alt+P</strong> in the workbench, unselect the <em>minify</em> profile and wait for the build to complete.
+                After you reload your browser page, you&#8217;ll notice, if you look at the source page, the minified versions are not referenced anymore.</p>
                 </div>
                 <div class="admonitionblock note">
                 <table>
@@ -475,7 +475,7 @@
                 </td>
                 <td class="content">
                 <div class="paragraph">
-                <p>The minified files still exist under <em>target/m2e-wtp/web-resources/</em> and are deployed as such. They&#8217;re unused, so they&#8217;re harmless, but you&#8217;d need to perform a clean build to remove them if necessary.</p>
+                <p>The minified files still exist under <em>target/m2e-wtp/web-resources/</em> and are deployed as such. They&#8217;re unused, so they&#8217;re harmless, but you&#8217;d need to perform a clean build to remove them, if necessary.</p>
                 </div>
                 </td>
                 </tr>
@@ -510,7 +510,7 @@
                 <p>Have fun!</p>
                 </div>
                 <div class="paragraph">
-                <p>Fred Bricon<br>
+                <p>Fred Bricon
                 <a href="https://twitter.com/fbricon">https://twitter.com/fbricon</a></p>
                 </div>
                 </div>

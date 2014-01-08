@@ -2,13 +2,13 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://jbosstools.github.com/jbosstools-website/</id>
   <title>JBoss Tools</title>
-  <updated>2014-01-07T11:28:16+00:00</updated>
+  <updated>2014-01-08T10:28:32+00:00</updated>
   <link href="http://jbosstools.github.com/jbosstools-website/blog/news.atom" rel="self" type="application/atom+xml" />
   <link href="http://jbosstools.github.com/jbosstools-website/" rel="alternate" type="text/html" />
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html</id>
     <title>Web resource optimization and Maven Profiles</title>
-    <updated>2014-01-07T11:28:16+00:00</updated>
+    <updated>2014-01-08T10:28:32+00:00</updated>
     <published>2014-01-02T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html" rel="alternate" type="text/html" />
     <author>
@@ -162,7 +162,7 @@
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;When m2e-wtp is present, m2e-wro4j automatically translates ${project.build.directory}/${project.build.finalName}/* output directories (the default values used by wro4j-maven-plugin) to ${project.build.directory}/m2e-wtp/web-resources/. This gives you on-the-fly redeployment of optimized resources on WTP controlled servers.&lt;/p&gt;
+      &lt;p&gt;When m2e-wtp is present, m2e-wro4j automatically translates ${project.build.directory}/${project.build.finalName}/* output directories (the default values used by wro4j-maven-plugin) to &lt;em&gt;${project.build.directory}/m2e-wtp/web-resources/&lt;/em&gt;. This gives you on-the-fly redeployment of optimized resources on WTP controlled servers.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;admonitionblock note&quot;&gt;
       &lt;table&gt;&lt;tr&gt;
@@ -193,7 +193,7 @@
       &lt;p&gt;I used &lt;strong&gt;kitchensink&lt;/strong&gt; as a project name.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;This project already has some wro4j-maven-plugin configuration we can use. All we need is to make the switch between regular and minify versions of the build more user friendly.&lt;/p&gt;
+      &lt;p&gt;This project already has some &lt;em&gt;wro4j-maven-plugin&lt;/em&gt; configuration we can use. All we need is to make the switch between regular and minified versions of the build more user friendly.&lt;/p&gt;
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;/div&gt;
@@ -201,7 +201,7 @@
       &lt;h2 id=&quot;_enable_minification&quot;&gt;Enable minification&lt;/h2&gt;
       &lt;div class=&quot;sectionbody&quot;&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;First, we need to remove one xml snippet from the pom.xml which prevents wro4j-maven-plugin from running during Eclipse builds, thus cancelling m2e-wro4j&amp;#8217;s efforts. Go to the &lt;em&gt;minify&lt;/em&gt; profile and delete :&lt;/p&gt;
+      &lt;p&gt;First, we need to remove one xml snippet from the pom.xml which prevents &lt;em&gt;wro4j-maven-plugin&lt;/em&gt; from running during Eclipse builds, thus cancelling m2e-wro4j&amp;#8217;s efforts. Go to the &lt;em&gt;minify&lt;/em&gt; profile and delete :&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;listingblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
@@ -420,10 +420,10 @@
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;If you&amp;#8217;re on a desktop, modify the color of the h1 class in &lt;em&gt;src/main/webapp/css/d.screen.css&lt;/em&gt; and save. This will trigger &lt;strong&gt;wro4j-maven-plugin:run&lt;/strong&gt; which will regenerate the minified version under target/m2e-wtp/web-resources/css/d.screen.min.css, which in turn will be deployed on Wildfly by the server adapter.&lt;/p&gt;
+      &lt;p&gt;If you&amp;#8217;re on a desktop, modify the color of the &lt;strong&gt;h1&lt;/strong&gt; class in &lt;em&gt;src/main/webapp/css/d.screen.css&lt;/em&gt; and save. This will trigger &lt;strong&gt;wro4j-maven-plugin:run&lt;/strong&gt; which will regenerate the minified version under &lt;em&gt;target/m2e-wtp/web-resources/css/d.screen.min.css&lt;/em&gt;, which in turn will be deployed on Wildfly by the server adapter.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Reloading the page will show the changes directly :&lt;/p&gt;
+      &lt;p&gt;Reloading the page (after the build is complete) will show the changes directly :&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
@@ -431,8 +431,8 @@
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Now you can switch back to using the regular, non-minified version by hitting Ctrl+Alt+P in the workbench, unselect the &lt;em&gt;minify&lt;/em&gt; profile and wait for the build to complete.
-      After you rreload your browser page, you&amp;#8217;ll notice, if you look at the source page, the minified versions are not referenced anymore.&lt;/p&gt;
+      &lt;p&gt;Now you can switch back to using the regular, non-minified version by hitting &lt;strong&gt;Ctrl+Alt+P&lt;/strong&gt; in the workbench, unselect the &lt;em&gt;minify&lt;/em&gt; profile and wait for the build to complete.
+      After you reload your browser page, you&amp;#8217;ll notice, if you look at the source page, the minified versions are not referenced anymore.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;admonitionblock note&quot;&gt;
       &lt;table&gt;&lt;tr&gt;
@@ -441,7 +441,7 @@
       &lt;/td&gt;
       &lt;td class=&quot;content&quot;&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The minified files still exist under &lt;em&gt;target/m2e-wtp/web-resources/&lt;/em&gt; and are deployed as such. They&amp;#8217;re unused, so they&amp;#8217;re harmless, but you&amp;#8217;d need to perform a clean build to remove them if necessary.&lt;/p&gt;
+      &lt;p&gt;The minified files still exist under &lt;em&gt;target/m2e-wtp/web-resources/&lt;/em&gt; and are deployed as such. They&amp;#8217;re unused, so they&amp;#8217;re harmless, but you&amp;#8217;d need to perform a clean build to remove them, if necessary.&lt;/p&gt;
       &lt;/div&gt;
       &lt;/td&gt;
       &lt;/tr&gt;&lt;/table&gt;
@@ -475,7 +475,8 @@
       &lt;p&gt;Have fun!&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Fred Bricon&lt;br&gt;&lt;a href=&quot;https://twitter.com/fbricon&quot;&gt;https://twitter.com/fbricon&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Fred Bricon
+      &lt;a href=&quot;https://twitter.com/fbricon&quot;&gt;https://twitter.com/fbricon&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;/div&gt;
@@ -484,7 +485,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html</id>
     <title>JBoss Tools 4.1 and Red Hat JBoss Developer Studio 7 go GA</title>
-    <updated>2014-01-07T11:28:16+00:00</updated>
+    <updated>2014-01-08T10:28:32+00:00</updated>
     <published>2013-07-23T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html" rel="alternate" type="text/html" />
     <author>
@@ -1085,7 +1086,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html</id>
     <title>show-domain-info: openshift-java-client in a nutshell</title>
-    <updated>2014-01-07T11:28:16+00:00</updated>
+    <updated>2014-01-08T10:28:32+00:00</updated>
     <published>2012-08-24T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html" rel="alternate" type="text/html" />
     <author>
