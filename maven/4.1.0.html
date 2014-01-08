@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JBoss Tools  - Maven 4.1.0</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="Wed, 08 Jan 2014 15:02:20 UTC" http-equiv="Last-Modified">
+    <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
+    <!-- IE 6-8 support of HTML 5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://static.jboss.org/theme/js/libs/html5/pre3.6/html5.min.js"></script>
+    <![endif]-->
+    <!-- Defines the project favicon. Change these URLs to your specific project folder on static.jboss.org. -->
+    <link href="http://static.jboss.org/images/tools/favicon.ico" rel="shortcut icon">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="http://static.jboss.org/images/tools/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="../stylesheets/jbt-styles.css" rel="stylesheet" type="text/css">
+    <link href="../fonts/font-awesome/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <!-- Defines the project banner. Change these URLs to your specific project folder on static.jboss.org -->
+    <!--
+      <style>
+        @media (min-width: 980px) {
+          .banner { background-image: url(http://static.jboss.org/images/tools/tools-banner-1180px.png); height: 110px;  }
+        }
+        @media (max-width: 979px) {
+          .banner { background-image: url(http://static.jboss.org/images/tools/tools-logo.png); background-repeat:no-repeat; height: 60px; }
+        }
+        @media (max-width: 650px) {
+          .banner { width: 200px; margin: 0px auto; }
+        }
+      </style>
+    -->
+    <style>
+      .banner { background-image: url(http://static.jboss.org/images/tools/tools-banner-1180px.png); height: 110px;  }
+    </style>
+    <script src="http://static.jboss.org/theme/js/libs/jquery/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <!-- begin accessibility skip to top -->
+    <ul class="visuallyhidden" id="top">
+      <li>
+        <a accesskey="n" href="#nav" title="Skip to navigation">Skip to navigation</a>
+      </li>
+      <li>
+        <a accesskey="c" href="#page" title="Skip to content">Skip to content</a>
+      </li>
+    </ul>
+    <div class="container" id="content">
+      <div class="dropup">
+        <a class="tabnav-closed" href="https://www.jboss.org" id="tab">Red Hat</a>
+        <script>
+          window.addEventListener('load', function() { renderTabzilla("JBoss Tools","tools") }, false);
+        </script>
+      </div>
+      <div class="banner">
+        <a href="#"></a>
+      </div>
+      <div class="navbar navbar-inverse" id="navbar-fix">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li id="home"><a href="..">Home</a></li>
+                <li id="downloads"><a href="../downloads">Downloads</a></li>
+                <li class="dropdown" id="docs"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Docs <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../features">Features</a></li>
+                  <li><a href="../whatsnew">What's New</a></li>
+                  <li><a href="../videos">Video Tutorials</a></li>
+                  <li><a href="http://docs.jboss.org/tools/4.1.0.Final/">Reference Guides</a></li>
+                </ul></li>
+                <li class="dropdown" id="community">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Community <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../contribute.html">Contribute</a></li>
+                    <li><a href="http://www.jboss.org/community/docs/DOC-10794">Wiki</a></li>
+                    <li><a href="http://community.jboss.org/community/tools?view=discussions">User Forum</a></li>
+                    <li><a href="https://lists.jboss.org/mailman/listinfo/jbosstools-dev">Mailing Lists</a></li>
+                    <li><a href="irc://irc.freenode.org/jbosstools">Chat</a></li>
+                    <li id="blog"><a href="../blog">Blog</a></li>
+                  </ul>
+                </li>
+                <li id="issuetracker"><a href="https://issues.jboss.org/browse/JBIDE">Issues</a></li>
+                <li id="sourcecode"><a href="https://github.com/jbosstools">Source Code</a></li>
+                <li id="build"><a href="http://hudson.jboss.org/hudson/view/JBossTools/view/JBossTools_Trunk/">Build</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Follow Us <b class="caret"></b></a>
+                  <ul class="dropdown-menu projectsocialmedia">
+                    <li><a href="http://twitter.com/jbosstools"><img src="http://static.jboss.org/theme/images/common/socialmedia_icon40_twitter.png"></a></li>
+                    <li><a href="https://plus.google.com/109915195368578219327"><img src="http://static.jboss.org/theme/images/common/socialmedia_icon40_googleplus.png"></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- activate the tab by adding the 'active' class -->
+      <script>
+        document.getElementById("docs").className += " active";
+      </script>
+      <div id="content-wrapper">
+        <div class='breadcrumb'><a class='breadcrumb_anchor ' href='../index.html'>Home</a> / <a class='breadcrumb_anchor active' href='4.1.0.html'>Maven 4.1.0</a></div>
+        <div class="row-fluid">
+          <div class="span2 sidebar">
+            <ul class="nav nav-list">
+              <li class="nav-header">Maven</li>
+              <li>
+                <a href="../features/maven.html">Overview</a>
+              </li>
+              <li>
+                <a>Issue Tracker</a>
+              </li>
+              <li>
+                <a>What's New</a>
+                <ul class="nav nav-list">
+                  <li class="active">
+                    <a href="4.1.0.html">4.1.0</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="nav-header">
+                Other features
+              </li>
+              <li>
+                <a href="../features/aerogear.html">Aerogear</a>
+              </li>
+              <li>
+                <a href="../features/arquillian.html">Arquillian</a>
+              </li>
+              <li>
+                <a href="../features/browsersim.html">BrowserSim</a>
+              </li>
+              <li>
+                <a href="../features/cdi.html">CDI</a>
+              </li>
+              <li>
+                <a href="../features/central.html">JBoss Central</a>
+              </li>
+              <li>
+                <a href="../features/forge.html">Forge Tool</a>
+              </li>
+              <li>
+                <a href="../features/hibernate.html">Hibernate Tools</a>
+              </li>
+              <li>
+                <a href="../features/livereload.html">LiveReload</a>
+              </li>
+              <li>
+                <a href="../features/openshift.html">OpenShift</a>
+              </li>
+              <li>
+                <a href="../features/server.html">Server Tooling</a>
+              </li>
+              <li>
+                <a href="../features/webservices.html">Web Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <div class="whatsnew">
+              <div class="sect1">
+              <h2 id="_what_s_new_in_4_1_0_cr1">What&#8217;s New in 4.1.0.CR1</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_jboss_maven_integration">JBoss Maven Integration</h3>
+              <div class="sect3">
+              <h4 id="_source_lookup_improvements">Source lookup improvements</h4>
+              <div class="paragraph">
+              <p>The automatic source lookup feature is now capable of fixing bad source attachements, even for Maven enabled projects. If the attached source doesn&#8217;t exist (ex. you wiped out your maven local repository) or doesn&#8217;t contain the right source files, it will try to download the proper source. This is especially handy when working on PDE plugins, when PDE automatically attaches the binary jar as a source to itself, even when it doesn&#8217;t contain any sources.</p>
+              </div>
+              <div class="paragraph">
+              <p>See JBIDE-14990 for more details.</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_what_s_new_in_4_1_0_beta1">What&#8217;s New in 4.1.0.Beta1</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_jboss_maven_integration">JBoss Maven Integration</h3>
+              <div class="sect3">
+              <h4 id="_edit_maven_repositories">Edit Maven Repositories</h4>
+              <div class="paragraph">
+              <p>Maven Repositories defined in profiles in your settings.xml (Window &gt; Preferences &gt; JBoss Tools &gt; Maven Integration &gt; Configure Maven Repositories&#8230;) can now be edited with the "Edit Repository&#8230;" button :</p>
+              </div>
+              <div class="paragraph">
+              <p>image::images/edit-maven-repositories.png
+              Inactive repositories now stand out with an (Inactive) suffix. Click on the "Edit Repository&#8230;" button to (re)activate them.
+              See JBIDE-13831 for more details.</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_what_s_new_in_4_1_0_beta1">What&#8217;s New in 4.1.0.Beta1</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_jboss_maven_integration">JBoss Maven Integration</h3>
+              <div class="sect3">
+              <h4 id="_dependency_conversion_ui_improvement">Dependency conversion UI improvement</h4>
+              <div class="paragraph">
+              <p>Non-default scopes and the optional attribute are now shown when converting a project to maven. It is on the dependency identification page where it is directly displayed in the "Maven Dependency" column.</p>
+              </div>
+              <div class="paragraph">
+              <p><span class="image"><img src="./images/display-dependency-scope.png" alt="display-dependency-scope"></span>
+              See JBIDE-14811 for more details.</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_what_s_new_in_4_1_0_alpha2">What&#8217;s New in 4.1.0.Alpha2</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_jboss_maven_integration">JBoss Maven Integration</h3>
+              <div class="sect3">
+              <h4 id="_source_lookup_for_the_masses">Source lookup for the masses</h4>
+              <div class="paragraph">
+              <p>Maven projects always had an this awesome feature where, clicking on any jar dependency, source would be downloaded automatically for you if needed.
+              We now give you the same level of awesomeness for <strong>any</strong> kind of (non-maven) project.</p>
+              </div>
+              <div class="paragraph">
+              <p>The automatic Source Lookup feature is based on Maven. As such, downloaded sources will be stored under your local Maven repository.</p>
+              </div>
+              <div class="paragraph">
+              <p>Since JDT doesn&#8217;t support variables in source attachments (such as M2_REPO), source attachments use absolute (non-portable) paths. It&#8217;s ok when the jar is part of a Classpath Library, since the path is stored in your own workspace. But it can become a problem if your jar dependency is listed in your project&#8217;s .classpath descriptor, potentially shared with other developers. For this reason, by default, you&#8217;ll be warned when a compatible source has been found :</p>
+              </div>
+              <div class="imageblock">
+              <div class="content">
+              <img src="./images/automatic_source_lookup_prompt.png" alt="automatic source lookup prompt">
+              </div>
+              </div>
+              <div class="paragraph">
+              <p>See it in action in this <a href="http://goo.gl/rzzXr">screencast</a>.</p>
+              </div>
+              <div class="paragraph">
+              <p>If you click on "Remember my decision", your choice will be applied for subsequent source lookups. Your choice can be modified under Window &gt; Preferences &gt; JBoss Tools &gt; Source Lookup :</p>
+              </div>
+              <div class="imageblock">
+              <div class="content">
+              <img src="./images/automatic_source_lookup_prefs.png" alt="automatic source lookup prefs">
+              </div>
+              </div>
+              <div class="paragraph">
+              <p>One advantage of the Source Lookup feature is it&#8217;ll check if source attachments are valid. for instance, if the source attachment points to a missing / invalid file, the proper source will be mapped instead. This mitigates the non-portable issue mentioned previously.</p>
+              </div>
+              <div class="paragraph">
+              <p>Under the hood, the source lookup mechanism is based on various identification strategies :</p>
+              </div>
+              <div class="ulist">
+              <ul>
+              <li>
+              <p>checks if the jar contains maven descriptors under META-INF/maven.</p>
+              </li>
+              <li>
+              <p>checks if the SHA1 checksum of the jar can be found in m2e&#8217;s nexus indexes.</p>
+              </li>
+              <li>
+              <p>checks if the SHA1 checksum of the jar can be identified from one of the remote Nexus repository instances defined in Window &gt; Preferences &gt; JBoss Tools &gt; Remote Repositories.</p>
+              </li>
+              <li>
+              <p>checks if the SHA1 checksum of the jar can be identified on <a href="http://search.maven.org/">http://search.maven.org</a></p>
+              </li>
+              </ul>
+              </div>
+              <div class="paragraph">
+              <p>See JBIDE-14003 for more details.</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="sect1">
+              <h2 id="_what_s_new_in_4_1_0_alpha1">What&#8217;s New in 4.1.0.Alpha1</h2>
+              <div class="sectionbody">
+              <div class="sect2">
+              <h3 id="_jboss_maven_integration">JBoss Maven Integration</h3>
+              <div class="sect3">
+              <h4 id="_jpa_jsf_jax_rs_configurators_moved_to_m2e_wtp">JPA/JSF/JAX-RS configurators moved to m2e-wtp</h4>
+              <div class="paragraph">
+              <p>The JBoss Tools JPA, JSF and JAX-RS configurators were contributed to the <a href="https://www.eclipse.org/m2e-wtp/">m2e-wtp</a> project, at the Eclipse Foundation. The can be enabled/disabled in the workspace preferences : Window &gt; Preferences &gt; Maven &gt; Java EE Integration :</p>
+              </div>
+              <div class="imageblock">
+              <div class="content">
+              <img src="./images/m2e-wtp-optional-configurator-preferences.png" alt="m2e wtp optional configurator preferences">
+              </div>
+              </div>
+              <div class="paragraph">
+              <p>They&#8217;re available as optional features from m2e-wtp&#8217;s update sites.</p>
+              </div>
+              <div class="ulist">
+              <ul>
+              <li>
+              <p><a href="http://download.eclipse.org/m2e-wtp/releases/juno/">http://download.eclipse.org/m2e-wtp/releases/juno/</a> for Eclipse Indigo (3.7), Juno (3.8, 4.2)</p>
+              </li>
+              <li>
+              <p><a href="http://download.eclipse.org/m2e-wtp/releases/kepler/">http://download.eclipse.org/m2e-wtp/releases/kepler/</a> for Eclipse Kepler (4.3).</p>
+              </li>
+              </ul>
+              </div>
+              <div class="paragraph">
+              <p>Please be aware m2e-wtp and JBoss Tools JPA, JSF JAX-RS Configurators overlap and can not be installed together.</p>
+              </div>
+              <div class="ulist">
+              <ul>
+              <li>
+              <p>In Eclipse versions prior to Juno SR2, if you try to update your Eclipse installation via "Help &gt; Install New Software&#8230;", the optional configurators won&#8217;t install because of the conflict with JBoss Tools. If you updated your version of Eclipse to Juno SR2, the m2e-wtp configurators should be seen as suitable replacement for their JBoss Tools counterparts.</p>
+              </li>
+              <li>
+              <p>For all Eclipse versions, doing "Help &gt; Find Updates" everything should update properly.</p>
+              </li>
+              </ul>
+              </div>
+              <div class="paragraph">
+              <p>As always, the safest path to upgrade is to start from a clean Eclipse installation.
+              On a somewhat related note, we ensured all JBoss Tools Maven features are fully compatible with the new m2e 1.3 (Juno SR2) and m2e-wtp 0.17.0.</p>
+              </div>
+              <div class="paragraph">
+              <p>See JBIDE-13048 for more details.</p>
+              </div>
+              </div>
+              </div>
+              <div class="sect2">
+              <h3 id="_kepler_juno_incompatibilities">Kepler/Juno Incompatibilities</h3>
+              <div class="paragraph">
+              <p>For Kepler, the Dali project has changed some of the APIs that are used by the Hibernate configurator. Adapting the Hibernate configurator to these new APIs resulted in incompatibilities with Juno to the extent that it is not anymore possible to support the installation of the Hibernate configurator plugin in Juno.
+              See JBIDE-13365 for more details.</p>
+              </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="row-fluid">
+        <div class="span2 offset1">
+          <h4>Navigate</h4>
+          <ul>
+            <li>
+              <a href=".." title="Overview">Overview</a>
+            </li>
+            <li>
+              <a href="../downloads" title="Downloads">Downloads</a>
+            </li>
+            <li>
+              <a href="../usage" title="Usage">Usage</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span2">
+          <h4>Follow Us</h4>
+          <ul>
+            <li>
+              <a href="../blog" title="Blog">Blog</a>
+            </li>
+            <li>
+              <a href="http://twitter.com/jbosstools" title="Twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/109915195368578219327" title="Google+">Google+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span2">
+          <h4>Contribute</h4>
+          <ul>
+            <li>
+              <a href="https://issues.jboss.org/browse/JBIDE" title="Submit a bug">Submit a bug</a>
+            </li>
+            <li>
+              <a href="https://github.com/jbosstools" title="Write code">Write Code</a>
+            </li>
+            <li>
+              <a href="http://community.jboss.org/community/tools?view=discussions" title="Ask questions on the forum">Ask questions on the forum</a>
+            </li>
+            <li>
+              <a href="irc://irc.freenode.org/jbosstools" title="Talk on IRC">Talk with us on IRC</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span3 offset1">
+          <h4>Licenses</h4>
+          <p>All plugins are available under the Eclipse Public License (EPL).</p>
+          <p>They may also contain some libraries licensed under certain open source licenses such as EPL, LGPL, and/or certain other open source licenses.</p>
+          <p></p>
+          <div class="jbossbadge">
+            <a href="http://www.jboss.org/">
+              <img src="http://static.jboss.org/theme/images/common/jbossbadge.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container" id="companyfooter">
+      <div class="redhatlogo">
+        <div id="logospacer"></div>
+        <a href="http://www.redhat.com/"><img src="http://static.jboss.org/theme/images/common/redhat_logo.png"></a>
+      </div>
+    </div>
+    <span class="backToTop">
+      <a href="#top">back to top</a>
+    </span>
+    <script src="http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.3/bootstrap-community.min.js"></script>
+    <!-- begin eloqua tracking -->
+    <script type='text/javascript' language='JavaScript' src='http://www.redhat.com/j/elqNow/elqCfg.js'></script>
+    <script type='text/javascript' language='JavaScript' src='http://www.redhat.com/j/elqNow/elqImg.js'></script>
+    <!-- end eloqua tracking -->
+    
+    <div id="oTags">
+      <script type="text/javascript" src="//www.stage.redhat.com/j/s_code.js"></script>
+      <script type="text/javascript"><!--
+      var coreUrl = encodeURI(document.URL.split("?")[0]).replace(/-/g," ");
+      var urlSplit = coreUrl.toLowerCase().split(/\//);
+      var urlLast = urlSplit[urlSplit.length-1];
+      var pageNameString = "";
+      var siteName = "";
+      var minorSectionIndex = 3
+      if (urlLast == "") {
+          urlSplit.splice(-1,1);
+      }
+      if (urlLast.search(/\./) >= 0) {
+          if (urlLast == "index.html") {
+              urlSplit.splice(-1,1);
+          }
+          else {
+              urlSplit[urlSplit.length-1] = urlLast.split(".").splice(0,1);
+          }
+      }
+      siteName = urlSplit[2].split(".")[1];
+      s.prop14 = s.eVar27 = siteName || "";
+      s.prop15 = s.eVar28 = urlSplit[minorSectionIndex] || "";
+      s.prop16 = s.eVar29 = urlSplit[minorSectionIndex+1] || "";
+      pageNameString = urlSplit.splice(3).join(" | ");
+      s.pageName = "jboss | community | " + siteName + " | " + pageNameString;
+      s.server = "jboss";
+      s.channel = "jboss | community";
+      s.prop4 = s.eVar23 = encodeURI(document.URL);
+      s.prop21 = s.eVar18 = coreUrl;
+      s.prop2 = s.eVar22 = "en";
+      s.prop3 = s.eVar19 = "us";
+      //--></script>
+      <script type="text/javascript" src="//www.stage.redhat.com/j/rh_omni_footer.js"></script>
+      <script language="JavaScript" type="text/javascript"><!--
+      if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+      //--></script>
+      <noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+      src="https://smtrcs.redhat.com/b/ss/redhatcom,redhatglobal/1/H.25.4--NS/0?[AQB]&cdp=3&[AQE]"
+      height="1" width="1" border="0" alt="" /></a></noscript>
+    </div>
+    <!-- End oTags -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount','UA-46704212-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  </body>
+</html>
