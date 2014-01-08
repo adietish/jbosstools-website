@@ -2,13 +2,13 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://jbosstools.github.com/jbosstools-website/</id>
   <title>JBoss Tools</title>
-  <updated>2014-01-08T10:31:24+00:00</updated>
+  <updated>2014-01-08T10:43:02+00:00</updated>
   <link href="http://jbosstools.github.com/jbosstools-website/blog/news.atom" rel="self" type="application/atom+xml" />
   <link href="http://jbosstools.github.com/jbosstools-website/" rel="alternate" type="text/html" />
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html</id>
     <title>Web resource optimization and Maven Profiles</title>
-    <updated>2014-01-08T10:31:24+00:00</updated>
+    <updated>2014-01-08T10:43:02+00:00</updated>
     <published>2014-01-02T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html" rel="alternate" type="text/html" />
     <author>
@@ -450,13 +450,16 @@
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;_your_feedback_is_important&quot;&gt;Your feedback is important&lt;/h2&gt;
+      &lt;h2 id=&quot;_conclusion&quot;&gt;Conclusion&lt;/h2&gt;
       &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Dealing with optimized resources in Eclipse is made really easy with a combination of the right tools. Just focus on code, save your work, see the changes instantly. &lt;strong&gt;WRO4J&lt;/strong&gt; and &lt;strong&gt;wro4j-maven-plugin&lt;/strong&gt; can give you much more than what we just saw here (resource aggregation, obfuscation, less processing &amp;#8230;). Hopefully you&amp;#8217;ll want to give it a try after reading this article, and if you do, don&amp;#8217;t forget to give us your feedback.&lt;/p&gt;
+      &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
       &lt;p&gt;Issues with m2e-wro4j can be opened at &lt;a href=&quot;https://github.com/jbosstools/m2e-wro4j/issues&quot;&gt;https://github.com/jbosstools/m2e-wro4j/issues&lt;/a&gt;.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Issues wwith the Maven Profile Manager can be opened at &lt;a href=&quot;https://issues.jboss.org/browse/JBIDE/component/12312576&quot;&gt;https://issues.jboss.org/browse/JBIDE/component/12312576&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Issues with the Maven Profile Manager can be opened at &lt;a href=&quot;https://issues.jboss.org/browse/JBIDE/component/12312576&quot;&gt;https://issues.jboss.org/browse/JBIDE/component/12312576&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
       &lt;p&gt;As always, for all your WRO4J or wro4j-maven-plugin specific issues, I strongly encourage you to :&lt;/p&gt;
@@ -485,7 +488,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html</id>
     <title>JBoss Tools 4.1 and Red Hat JBoss Developer Studio 7 go GA</title>
-    <updated>2014-01-08T10:31:24+00:00</updated>
+    <updated>2014-01-08T10:43:02+00:00</updated>
     <published>2013-07-23T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html" rel="alternate" type="text/html" />
     <author>
@@ -1086,7 +1089,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html</id>
     <title>show-domain-info: openshift-java-client in a nutshell</title>
-    <updated>2014-01-08T10:31:24+00:00</updated>
+    <updated>2014-01-08T10:43:02+00:00</updated>
     <published>2012-08-24T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html" rel="alternate" type="text/html" />
     <author>
