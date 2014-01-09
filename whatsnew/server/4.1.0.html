@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <meta content="Thu, 09 Jan 2014 15:52:39 UTC" http-equiv="Last-Modified">
+    <meta content="Thu, 09 Jan 2014 16:25:39 UTC" http-equiv="Last-Modified">
     <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
     <!-- IE 6-8 support of HTML 5 elements -->
     <!--[if lt IE 9]>
@@ -170,18 +170,12 @@
           <div class="span10">
             <div class="whatsnew">
               <div class="sect1">
-              <h2 id="_4_1_0_cr1">4.1.0.CR1</h2>
+              <h2 id="_servers">Servers</h2>
               <div class="sectionbody">
               <div class="sect2">
-              <h3 id="_application_wizard">Application Wizard</h3>
+              <h3 id="_tomcat_servers_found_with_runtime_detection">Tomcat Servers found with Runtime Detection</h3>
               <div class="paragraph">
-              <p>Creation log for all applications 	When creating applications you want to know about the credentials that OpenShift initially set for you. This is especially helpful and required when you create a jenkins where you get it&#8217;s url and username/password presented.
-              With CR1 we now present you what OpenShift did for you if there&#8217;s anything to be noticed for any type of application and/or cartridge.</p>
-              </div>
-              <div class="imageblock">
-              <div class="content">
-              <img src="./images/credentials2.png" alt="credentials2">
-              </div>
+              <p>Tomcat servers are now able to be found and created via JBossTools Runtime Detection. This means even if you restart in a new workspace, you&#8217;ll be able to use the runtime detection&#8217;s automatic scanning of filesystem paths to create your Tomcat server (or any slimmed-down Tomcat-based JBoss server) as soon as you fire up your new workspace.</p>
               </div>
               <div class="paragraph">
               <p>Related Jira</p>
