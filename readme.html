@@ -26,6 +26,9 @@
 <p>Get <a href="http://www.gnu.org/software/wget/">GNU Wget 1.14</a></p>
 </li>
 <li>
+<p>Get node.js (eg., <code>sudo yum install nodejs</code>)</p>
+</li>
+<li>
 <p>If on Mac OS, get XCode (needed for native gems)</p>
 </li>
 </ul>
@@ -52,8 +55,17 @@ If you are not going to use RVM have a look at the different installations <a hr
 <div class="ulist">
 <ul>
 <li>
-<p>Install <a href="https://rvm.io">RVM</a>.</p>
+<p>Install <a href="https://rvm.io">RVM</a> as root, eg:</p>
 </li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>curl -sSL https://get.rvm.io | bash -s stable --ruby=1.9.3</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Set up the isolated environment for the site</p>
 </li>
@@ -61,7 +73,8 @@ If you are not going to use RVM have a look at the different installations <a hr
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>rvm install 1.9.3
+<pre class="highlight"><code># run these as root
+rvm install 1.9.3
 rvm use 1.9.3
 rvm gemset create jbosstools-website</code></pre>
 </div>
@@ -103,7 +116,9 @@ dependencies.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>gem install bundler
+<pre class="highlight"><code># run these as root
+gem install bundler
+gem install execjs
 bundle install</code></pre>
 </div>
 </div>
@@ -120,7 +135,10 @@ management, you need to rerun <code>bundle install</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Run  <code>rake preview</code></p>
+<p>Run <code>rake preview</code></p>
+</li>
+<li>
+<p>If you see a message like <code>Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes</code> this means nodejs is not installed.</p>
 </li>
 <li>
 <p>Wait for a message like <code>[2014-01-06 11:48:01] INFO  WEBrick::HTTPServer#start: pid=24294 port=4242</code> to appear in the console (can take a few tens of seconds)</p>
