@@ -117,8 +117,7 @@ dependencies.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code># run these as root
-gem install bundler
-gem install execjs
+gem install bundler execjs
 bundle install</code></pre>
 </div>
 </div>
@@ -200,7 +199,9 @@ by running guard.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>guard start</code></pre>
+<pre class="highlight"><code># run these as root
+gem install guard guard-livereload
+guard start</code></pre>
 </div>
 </div>
 <div class="paragraph">
