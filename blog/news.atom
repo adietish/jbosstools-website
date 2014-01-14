@@ -2,13 +2,13 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://jbosstools.github.com/jbosstools-website/</id>
   <title>JBoss Tools</title>
-  <updated>2014-01-13T21:56:33+00:00</updated>
+  <updated>2014-01-14T10:16:32+00:00</updated>
   <link href="http://jbosstools.github.com/jbosstools-website/blog/news.atom" rel="self" type="application/atom+xml" />
   <link href="http://jbosstools.github.com/jbosstools-website/" rel="alternate" type="text/html" />
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html</id>
     <title>Web resource optimization and Maven Profiles</title>
-    <updated>2014-01-13T21:56:33+00:00</updated>
+    <updated>2014-01-14T10:16:32+00:00</updated>
     <published>2014-01-02T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html" rel="alternate" type="text/html" />
     <author>
@@ -284,8 +284,8 @@
       &lt;/li&gt;
       &lt;/ol&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;_setup_the_maven_property&quot;&gt;Setup the maven property&lt;/h4&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_setup_the_maven_property&quot;&gt;Setup the maven property&lt;/h3&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
       &lt;p&gt;In the main &lt;em&gt;&amp;lt;properties&amp;gt;&lt;/em&gt; block, at the top of your pom.xml, add the following property :&lt;/p&gt;
       &lt;/div&gt;
@@ -307,8 +307,8 @@
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;_enable_web_resource_filtering&quot;&gt;Enable web resource filtering&lt;/h4&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_enable_web_resource_filtering&quot;&gt;Enable web resource filtering&lt;/h3&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
       &lt;p&gt;Modify the default maven-war-plugin configuration to enable filtering on html files :&lt;/p&gt;
       &lt;/div&gt;
@@ -332,8 +332,8 @@
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;_use_the_maven_property&quot;&gt;Use the maven property&lt;/h4&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_use_the_maven_property&quot;&gt;Use the maven property&lt;/h3&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
       &lt;p&gt;In &lt;strong&gt;index.html&lt;/strong&gt;, replace at least the following occurrences :&lt;/p&gt;
       &lt;/div&gt;
@@ -399,8 +399,8 @@
       &lt;img src=&quot;./images/minified-resources.png&quot; alt=&quot;minified resources&quot;&gt;
       &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;_deploy_the_application_on_wildfly&quot;&gt;Deploy the application on WildFly&lt;/h4&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;_deploy_the_application_on_wildfly&quot;&gt;Deploy the application on WildFly&lt;/h3&gt;
       &lt;div class=&quot;ulist&quot;&gt;
       &lt;ul&gt;
       &lt;li&gt;
@@ -488,7 +488,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html</id>
     <title>JBoss Tools 4.1 and Red Hat JBoss Developer Studio 7 go GA</title>
-    <updated>2014-01-13T21:56:33+00:00</updated>
+    <updated>2014-01-14T10:16:32+00:00</updated>
     <published>2013-07-23T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html" rel="alternate" type="text/html" />
     <author>
@@ -1089,7 +1089,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html</id>
     <title>show-domain-info: openshift-java-client in a nutshell</title>
-    <updated>2014-01-13T21:56:33+00:00</updated>
+    <updated>2014-01-14T10:16:32+00:00</updated>
     <published>2012-08-24T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html" rel="alternate" type="text/html" />
     <author>
