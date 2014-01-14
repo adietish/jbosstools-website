@@ -2,13 +2,13 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://jbosstools.github.com/jbosstools-website/</id>
   <title>JBoss Tools</title>
-  <updated>2014-01-14T10:39:40+00:00</updated>
+  <updated>2014-01-14T15:21:57+00:00</updated>
   <link href="http://jbosstools.github.com/jbosstools-website/blog/news.atom" rel="self" type="application/atom+xml" />
   <link href="http://jbosstools.github.com/jbosstools-website/" rel="alternate" type="text/html" />
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html</id>
     <title>Web resource optimization and Maven Profiles</title>
-    <updated>2014-01-14T10:39:40+00:00</updated>
+    <updated>2014-01-14T15:21:57+00:00</updated>
     <published>2014-01-02T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2014-01-02-web-resource-optimization-and-profiles.html" rel="alternate" type="text/html" />
     <author>
@@ -488,7 +488,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html</id>
     <title>JBoss Tools 4.1 and Red Hat JBoss Developer Studio 7 go GA</title>
-    <updated>2014-01-14T10:39:40+00:00</updated>
+    <updated>2014-01-14T15:21:57+00:00</updated>
     <published>2013-07-23T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2013-07-23-jbosstools_41_and_Red_Hat_Developer_Studio_7_go_GA.html" rel="alternate" type="text/html" />
     <author>
@@ -1089,7 +1089,7 @@
   <entry>
     <id>http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html</id>
     <title>show-domain-info: openshift-java-client in a nutshell</title>
-    <updated>2014-01-14T10:39:40+00:00</updated>
+    <updated>2014-01-14T15:21:57+00:00</updated>
     <published>2012-08-24T00:00:00+00:00</published>
     <link href="http://jbosstools.github.com/jbosstools-website/blog/2012-08-24-show-domain-info-openshift-java-client-in-a-nutshell.html" rel="alternate" type="text/html" />
     <author>
