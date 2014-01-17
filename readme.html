@@ -26,7 +26,10 @@
 <p>Get <a href="http://www.gnu.org/software/wget/">GNU Wget 1.14</a></p>
 </li>
 <li>
-<p>Get node.js (eg., <code>sudo yum install nodejs</code>)</p>
+<p>If on Linux, you might need to install stuff for nokogiri (<code>sudo yum install libxml libxml-devel libxslt libxslt-devel</code>)</p>
+</li>
+<li>
+<p>If on Linux, you need to install node.js for execjs (<em>sudo yum install nodejs</em>)</p>
 </li>
 <li>
 <p>If on Mac OS, get XCode (needed for native gems)</p>
@@ -55,14 +58,17 @@ If you are not going to use RVM have a look at the different installations <a hr
 <div class="ulist">
 <ul>
 <li>
-<p>Install <a href="https://rvm.io">RVM</a> as root, eg:</p>
+<p>Install <a href="https://rvm.io">RVM</a></p>
 </li>
 </ul>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>curl -sSL https://get.rvm.io | bash -s stable --ruby=1.9.3</code></pre>
+<div class="paragraph">
+<p>Note: This installation varies per OS, see details on rvm.io.</p>
 </div>
+<div class="paragraph">
+<p>For Linux/Fedora: <code>\curl -sSL https://get.rvm.io | bash</code> is the simplest and no root allowed)
+Note that for <em>rvm</em> to be activated you need to run as a login shell. When running <code>rvm</code> it should tell you if
+you are running in a proper terminal/login.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -73,7 +79,8 @@ If you are not going to use RVM have a look at the different installations <a hr
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code># run these as root
+<pre class="highlight"><code># Do *not* run these as root.
+# The purpose of using rvm is to have non-root, user isolated and reproducible gem/ruby environment
 rvm install 1.9.3
 rvm use 1.9.3
 rvm gemset create jbosstools-website</code></pre>
@@ -100,7 +107,7 @@ cd jbosstools-website</code></pre>
 <p>If you see a message like this:</p>
 </div>
 <div class="paragraph">
-<p><code>Gemset 'jbosstools' does not exist, 'rvm gemset create jbosstools' first, or
+<p><code>Gemset 'jbosstools-website' does not exist, 'rvm gemset create jbosstools-website' first, or
 append '--create'.</code></p>
 </div>
 <div class="paragraph">
@@ -116,8 +123,8 @@ dependencies.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code># run these as root
-gem install bundler execjs
+<pre class="highlight"><code># do *not* run these as root
+gem install bundler
 bundle install</code></pre>
 </div>
 </div>
