@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <meta content="Fri, 17 Jan 2014 11:16:52 UTC" http-equiv="Last-Modified">
+    <meta content="Fri, 17 Jan 2014 11:19:04 UTC" http-equiv="Last-Modified">
     <link href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.3/bootstrap-community.min.css" media="screen" rel="stylesheet">
     <!-- IE 6-8 support of HTML 5 elements -->
     <!--[if lt IE 9]>
@@ -91,7 +91,7 @@
                 </li>
                 <li id="issuetracker"><a href="https://issues.jboss.org/browse/JBIDE">Issues</a></li>
                 <li id="sourcecode"><a href="https://github.com/jbosstools">Source Code</a></li>
-                <li id="build"><a href="http://hudson.jboss.org/hudson/view/JBossTools/view/JBossTools_Trunk/">Build</a></li>
+                <li id="build"><a href="http://hudson.jboss.org/hudson/view/JBossTools/view/JBossTools_Master/">Build</a></li>
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Follow Us <b class="caret"></b></a>
                   <ul class="dropdown-menu projectsocialmedia">
@@ -157,9 +157,9 @@
               </span>
             </h2>
             <div class="center">
-              <a>What's New</a>
+              <a href="https://access.redhat.com/site/documentation/en-US/Red_Hat_JBoss_Developer_Studio/">Documentation</a>
               &#124;
-              <a>Release Notes</a>
+              <a href="https://access.redhat.com/site/documentation/en-US/Red_Hat_JBoss_Developer_Studio/6.0/html-single/6.0.1_Release_Notes/index.html">Release Notes</a>
             </div>
             <div class="alert alert-success">
               JBoss Developer Studio 6.0.1.GA was released on 2012-11-01.
@@ -172,6 +172,11 @@
                 <li id="marketplace_tab">
                   <a data-toggle="tab" href="#marketplace">
                     Eclipse Marketplace
+                  </a>
+                </li>
+                <li id="zips_tab">
+                  <a data-toggle="tab" href="#zips">
+                    Update Site Zip
                   </a>
                 </li>
               </ul>
@@ -192,6 +197,23 @@
                   You can also view the installation page on the&nbsp<a href="http://marketplace.eclipse.org/node/503834" title="Eclipse Marketplace">Eclipse Marketplace</a>.
                 </p>
               </div>
+              <div class="tab-pane" id="zips">
+                <p>Below, you can download Update Site Zips (Archived p2 Repos) for offline installation. You <strong>do not need to unpack the zips</strong> to use them. Install into Eclipse via:<br /></p>
+                
+                <blockquote>
+                  <p>Help &gt; Install New Software&#8230; &gt; Add&#8230; &gt; Archive&#8230;</p>
+                </blockquote>
+                
+                <p>Then select the downloaded zip, and the feature(s) you'd like to install.</p>
+                <table class="center">
+                  <tr>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th>Link</th>
+                    <th>MD5</th>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -199,8 +221,6 @@
           $(document).ready(function () {
             $('#update_site_tab').addClass('disabled');
           $('#update_site_tab>a').removeAttr('data-toggle');
-          $('#zips_tab').addClass('disabled');
-          $('#zips_tab>a').removeAttr('data-toggle');
           $('#installation_tabs li:not(.disabled):first>a').tab('show');
           
             
